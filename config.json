@@ -1,11 +1,11 @@
 {
-  "robot_name": "robot", # TODO: replace with robot name
-  "package_name": "onshape_description_template", # TODO: replace with package name
+  "robot_name": "rover",
+  "package_name": "rover_description",
   "assets_directory": "meshes",
   "output_filename": "urdf/robot",
   "output_format": "urdf",
-  "document_id": "", # TODO: replace with document_id (after d/ in url)
-  "workspace_id": "", # TODO: replace with workspace_id (after w/ in url)
-  "element_id": "", # TODO: replace with element_id (after e/ in url)
-  "assembly_name": "" # TODO: replace with OnShape assembly name
+  "document_id": "b6ac805677604f50f29b90bd", 
+  "workspace_id": "f7cf7502a4385f463da6ef04",
+  "element_id": "0d33c74b8db9f500c393148b",
+  "assembly_name": "rover_assembly"
 }
