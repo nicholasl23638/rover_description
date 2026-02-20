@@ -1,0 +1,285 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: b6ac805677604f50f29b90bd / workspace_id: f7cf7502a4385f463da6ef04 -->
+<mujoco model="rover">
+  <compiler angle="radian" meshdir="meshes" autolimits="true"/>
+  <default>
+    <default class="rover">
+      <joint frictionloss="0.1" armature="0.005"/>
+      <position kp="50" dampratio="1"/>
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+      </default>
+      <default class="collision">
+        <geom group="3"/>
+      </default>
+    </default>
+  </default>
+  <worldbody>
+    <!-- Link chassis -->
+    <body name="chassis" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <inertial pos="-0.266784 -0.20623 -0.0288184" mass="29.5784" fullinertia="0.731528 1.27479 1.49519 1.7327e-08 -0.096069 1.2884e-08"/>
+      <!-- Part base -->
+      <geom type="mesh" class="visual" pos="-0.113729 -0.20623 0.051442" quat="1 -2.0683e-08 1.52599e-07 -1.9604e-08" mesh="base" material="base_material"/>
+      <geom type="mesh" class="collision" pos="-0.113729 -0.20623 0.051442" quat="1 -2.0683e-08 1.52599e-07 -1.9604e-08" mesh="base" material="base_material"/>
+      <!-- Part chassis -->
+      <geom type="mesh" class="visual" pos="-0.266129 -0.20623 -0.151758" quat="1 -2.0683e-08 1.52599e-07 -1.9604e-08" mesh="chassis" material="chassis_material"/>
+      <geom type="mesh" class="collision" pos="-0.266129 -0.20623 -0.151758" quat="1 -2.0683e-08 1.52599e-07 -1.9604e-08" mesh="chassis" material="chassis_material"/>
+      <!-- Link part_1 -->
+      <body name="part_1" pos="-0.494729 -0.39673 -0.100958" quat="0.707107 -0.707107 1.21767e-07 9.4042e-08">
+        <!-- Joint from chassis to part_1 -->
+        <joint axis="0 0 1" name="FL_drive" type="hinge"/>
+        <inertial pos="-0 0 -0.0475496" mass="5.36566" fullinertia="0.0699654 0.0699654 0.12389 -0 0 -0"/>
+        <!-- Part part_1 -->
+        <geom type="mesh" class="visual" pos="-0 0 0" quat="0 -1 -0 0" mesh="part_1" material="part_1_material"/>
+        <geom type="mesh" class="collision" pos="-0 0 0" quat="0 -1 -0 0" mesh="part_1" material="part_1_material"/>
+      </body>
+      <!-- Link part_1_2 -->
+      <body name="part_1_2" pos="-0.0375289 -0.39673 -0.100958" quat="0.707107 -0.707107 1.21767e-07 9.4042e-08">
+        <!-- Joint from chassis to part_1_2 -->
+        <joint axis="0 0 1" name="BL_drive" type="hinge"/>
+        <inertial pos="-0 -0 -0.0475496" mass="5.36566" fullinertia="0.0699654 0.0699654 0.12389 -0 0 -0"/>
+        <!-- Part part_1_2 -->
+        <geom type="mesh" class="visual" pos="0 0 -0" quat="0 1 0 -0" mesh="part_1" material="part_1_material"/>
+        <geom type="mesh" class="collision" pos="0 0 -0" quat="0 1 0 -0" mesh="part_1" material="part_1_material"/>
+      </body>
+      <!-- Link part_1_3 -->
+      <body name="part_1_3" pos="-0.494729 -0.0157296 -0.100958" quat="0.707107 0.707107 9.4042e-08 -1.21767e-07">
+        <!-- Joint from chassis to part_1_3 -->
+        <joint axis="0 0 1" name="FR_drive" type="hinge"/>
+        <inertial pos="0 -0 -0.0475496" mass="5.36566" fullinertia="0.0699654 0.0699654 0.12389 0 -0 -0"/>
+        <!-- Part part_1_3 -->
+        <geom type="mesh" class="visual" pos="0 -0 -0" quat="0 -1 0 -0" mesh="part_1" material="part_1_material"/>
+        <geom type="mesh" class="collision" pos="0 -0 -0" quat="0 -1 0 -0" mesh="part_1" material="part_1_material"/>
+      </body>
+      <!-- Link part_1_4 -->
+      <body name="part_1_4" pos="-0.0375289 -0.0157296 -0.100958" quat="0.707107 0.707107 9.4042e-08 -1.21767e-07">
+        <!-- Joint from chassis to part_1_4 -->
+        <joint axis="0 0 1" name="BR_drive" type="hinge"/>
+        <inertial pos="-0 0 -0.0475496" mass="5.36566" fullinertia="0.0699654 0.0699654 0.12389 0 -0 -0"/>
+        <!-- Part part_1_4 -->
+        <geom type="mesh" class="visual" pos="0 0 0" quat="0 -1 0 0" mesh="part_1" material="part_1_material"/>
+        <geom type="mesh" class="collision" pos="0 0 0" quat="0 -1 0 0" mesh="part_1" material="part_1_material"/>
+      </body>
+      <!-- Link lidar -->
+      <body name="lidar" pos="-0.494729 -0.20623 0.0514421" quat="2.0683e-08 1 -1.9604e-08 -1.52599e-07">
+        <!-- Joint from chassis to lidar -->
+        <!-- Joint is "fixed", skipping it -->
+        <inertial pos="0 -0 -0.0381" mass="1.2066" fullinertia="0.00180016 0.00180016 0.00243265 0 0 -0"/>
+        <!-- Part lidar -->
+        <geom type="mesh" class="visual" pos="0 0 -0" quat="0 1 0 0" mesh="lidar" material="lidar_material"/>
+        <geom type="mesh" class="collision" pos="0 0 -0" quat="0 1 0 0" mesh="lidar" material="lidar_material"/>
+      </body>
+      <!-- Link l0 -->
+      <body name="l0" pos="-0.113729 -0.20623 0.153042" quat="2.0683e-08 1 -1.9604e-08 -1.52599e-07">
+        <!-- Joint from chassis to l0 -->
+        <joint axis="0 0 1" name="base_l0" type="hinge"/>
+        <inertial pos="-0 -0.00273443 -0.0971396" mass="2.39104" fullinertia="0.00990806 0.00914638 0.00427665 0 -0 -0.000361301"/>
+        <!-- Part l0 -->
+        <geom type="mesh" class="visual" pos="-0 0 0.1016" quat="0 1 0 0" mesh="l0" material="l0_material"/>
+        <geom type="mesh" class="collision" pos="-0 0 0.1016" quat="0 1 0 0" mesh="l0" material="l0_material"/>
+        <!-- Link l1 -->
+        <body name="l1" pos="-0 -0.1524 -0.1524" quat="0.707107 0.707107 0 0">
+          <!-- Joint from l0 to l1 -->
+          <joint axis="0 0 1" name="l0_l1" type="hinge"/>
+          <inertial pos="0.0913043 0 -0.0508" mass="2.50551" fullinertia="0.00334246 0.0150034 0.0145766 0 -0 0"/>
+          <!-- Part l1 -->
+          <geom type="mesh" class="visual" pos="-0 0.254 -0.1524" quat="0.707107 0.707107 0 -0" mesh="l1" material="l1_material"/>
+          <geom type="mesh" class="collision" pos="-0 0.254 -0.1524" quat="0.707107 0.707107 0 -0" mesh="l1" material="l1_material"/>
+          <!-- Link l2 -->
+          <body name="l2" pos="0.2032 0 -0.0508" quat="0.707107 0 -0.707107 -0">
+            <!-- Joint from l1 to l2 -->
+            <!-- Joint is "fixed", skipping it -->
+            <inertial pos="-0.003331 2.5e-11 -0.0963825" mass="1.96282" fullinertia="0.00691356 0.00799142 0.0033451 2e-12 -0.00036625 1e-12"/>
+            <!-- Part l2 -->
+            <geom type="mesh" class="visual" pos="-0.1016 0.254 0.2032" quat="0.5 0.5 0.5 -0.5" mesh="l2" material="l2_material"/>
+            <geom type="mesh" class="collision" pos="-0.1016 0.254 0.2032" quat="0.5 0.5 0.5 -0.5" mesh="l2" material="l2_material"/>
+            <!-- Link l3 -->
+            <body name="l3" pos="-0.0508 0 -0.1524" quat="0.707107 -0 0.707107 -0">
+              <!-- Joint from l2 to l3 -->
+              <joint axis="0 0 1" name="l2_l3" type="hinge"/>
+              <inertial pos="0.0659696 -0 -0.0508" mass="1.96713" fullinertia="0.00259743 0.00827847 0.00794865 -0 -0 0"/>
+              <!-- Part l3 -->
+              <geom type="mesh" class="visual" pos="-0.3556 0.254 -0.0508" quat="0.707107 0.707107 0 0" mesh="l3" material="l3_material"/>
+              <geom type="mesh" class="collision" pos="-0.3556 0.254 -0.0508" quat="0.707107 0.707107 0 0" mesh="l3" material="l3_material"/>
+              <!-- Link part_6 -->
+              <body name="part_6" pos="0.1524 -0 -0.0508" quat="0.707107 0 -0.707107 0">
+                <!-- Joint from l3 to part_6 -->
+                <!-- Joint is "fixed", skipping it -->
+                <inertial pos="0.00259042 5.9e-11 -0.124353" mass="2.52457" fullinertia="0.0138994 0.0151421 0.00425848 3e-12 0.000515573 6e-12"/>
+                <!-- Part part_6 -->
+                <geom type="mesh" class="visual" pos="0 0.254 0.508" quat="0.5 0.5 0.5 -0.5" mesh="part_6" material="part_6_material"/>
+                <geom type="mesh" class="collision" pos="0 0.254 0.508" quat="0.5 0.5 0.5 -0.5" mesh="part_6" material="part_6_material"/>
+                <!-- Link part_7 -->
+                <body name="part_7" pos="0.0508 -0 -0.2032" quat="0 0.707107 -0 -0.707107">
+                  <!-- Joint from part_6 to part_7 -->
+                  <joint axis="0 0 1" name="l4_l5" type="hinge"/>
+                  <inertial pos="0.0460155 0 -0.0508" mass="1.58137" fullinertia="0.00210371 0.00446692 0.00419773 0 -0 -0"/>
+                  <!-- Part part_7 -->
+                  <geom type="mesh" class="visual" pos="-0.7112 -0.254 0.0508" quat="0.707107 -0.707107 0 0" mesh="part_7" material="part_7_material"/>
+                  <geom type="mesh" class="collision" pos="-0.7112 -0.254 0.0508" quat="0.707107 -0.707107 0 0" mesh="part_7" material="part_7_material"/>
+                  <!-- Link part_8 -->
+                  <body name="part_8" pos="0.127 0 -0.0508" quat="0 -0.707107 0 0.707107">
+                    <!-- Joint from part_7 to part_8 -->
+                    <joint axis="0 0 1" name="l5_ee" type="hinge"/>
+                    <inertial pos="3.1441e-08 -1.4282e-08 -0.0487831" mass="0.211137" fullinertia="0.000191412 0.000205123 5.92586e-05 -9.9e-11 3.34e-10 -3.5e-10"/>
+                    <!-- Part part_8 -->
+                    <geom type="mesh" class="visual" pos="-0.1016 0.254 0.8382" quat="0.5 0.5 0.5 -0.5" mesh="part_8" material="part_8_material"/>
+                    <geom type="mesh" class="collision" pos="-0.1016 0.254 0.8382" quat="0.5 0.5 0.5 -0.5" mesh="part_8" material="part_8_material"/>
+                  </body>
+                  <!-- Link camera -->
+                  <body name="camera" pos="0.0508 0.04445 -0.0508" quat="0.5 0.5 0.5 -0.5">
+                    <!-- Joint from part_7 to camera -->
+                    <!-- Joint is "fixed", skipping it -->
+                    <inertial pos="0 0 -0.0125" mass="0.264766" fullinertia="6.8741e-05 0.000647719 0.000689297 0 0 0"/>
+                    <!-- Part camera -->
+                    <geom type="mesh" class="visual" pos="-0.085725 -0.025 -0.025" quat="1 0 -0 -0" mesh="camera" material="camera_material"/>
+                    <geom type="mesh" class="collision" pos="-0.085725 -0.025 -0.025" quat="1 0 -0 -0" mesh="camera" material="camera_material"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <!-- Link flipper -->
+    <body name="flipper" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="flipper_freejoint"/>
+      <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+      <!-- Part flipper -->
+      <geom type="mesh" class="visual" pos="-0.0375289 -0.52881 -0.100958" quat="9.4042e-08 -1.21767e-07 -0.707107 -0.707107" mesh="flipper" material="flipper_material"/>
+      <geom type="mesh" class="collision" pos="-0.0375289 -0.52881 -0.100958" quat="9.4042e-08 -1.21767e-07 -0.707107 -0.707107" mesh="flipper" material="flipper_material"/>
+    </body>
+    <!-- Link part_1_5 -->
+    <body name="part_1_5" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="part_1_5_freejoint"/>
+      <inertial pos="-0.0375289 -0.601359 -0.100958" mass="5.36566" fullinertia="0.0699654 0.12389 0.0699654 2.114e-09 -0 -2.231e-09"/>
+      <!-- Part part_1_5 -->
+      <geom type="mesh" class="visual" pos="-0.0375289 -0.55381 -0.100958" quat="0.707107 0.707107 9.4042e-08 -1.21767e-07" mesh="part_1" material="part_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0375289 -0.55381 -0.100958" quat="0.707107 0.707107 9.4042e-08 -1.21767e-07" mesh="part_1" material="part_1_material"/>
+    </body>
+    <!-- Link part_1_6 -->
+    <body name="part_1_6" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="part_1_6_freejoint"/>
+      <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+      <!-- Part part_1_6 -->
+      <geom type="mesh" class="visual" pos="0.318071 -0.55381 -0.100958" quat="0.707107 0.707107 9.4042e-08 -1.21767e-07" mesh="part_1__2" material="part_1__2_material"/>
+      <geom type="mesh" class="collision" pos="0.318071 -0.55381 -0.100958" quat="0.707107 0.707107 9.4042e-08 -1.21767e-07" mesh="part_1__2" material="part_1__2_material"/>
+    </body>
+    <!-- Link flipper_2 -->
+    <body name="flipper_2" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="flipper_2_freejoint"/>
+      <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+      <!-- Part flipper_2 -->
+      <geom type="mesh" class="visual" pos="-0.494729 -0.52881 -0.100958" quat="0.705379 -0.705379 -0.0493982 -0.0493983" mesh="flipper" material="flipper_material"/>
+      <geom type="mesh" class="collision" pos="-0.494729 -0.52881 -0.100958" quat="0.705379 -0.705379 -0.0493982 -0.0493983" mesh="flipper" material="flipper_material"/>
+    </body>
+    <!-- Link part_1_7 -->
+    <body name="part_1_7" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="part_1_7_freejoint"/>
+      <inertial pos="-0.494729 -0.601359 -0.100958" mass="5.36566" fullinertia="0.0699654 0.12389 0.0699654 2.114e-09 -0 -2.231e-09"/>
+      <!-- Part part_1_7 -->
+      <geom type="mesh" class="visual" pos="-0.494729 -0.55381 -0.100958" quat="0.684064 0.684064 -0.179043 0.179043" mesh="part_1" material="part_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.494729 -0.55381 -0.100958" quat="0.684064 0.684064 -0.179043 0.179043" mesh="part_1" material="part_1_material"/>
+    </body>
+    <!-- Link part_1_8 -->
+    <body name="part_1_8" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="part_1_8_freejoint"/>
+      <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+      <!-- Part part_1_8 -->
+      <geom type="mesh" class="visual" pos="-0.846858 -0.55381 -0.150521" quat="0.663267 0.663267 -0.245106 0.245106" mesh="part_1__2" material="part_1__2_material"/>
+      <geom type="mesh" class="collision" pos="-0.846858 -0.55381 -0.150521" quat="0.663267 0.663267 -0.245106 0.245106" mesh="part_1__2" material="part_1__2_material"/>
+    </body>
+    <!-- Link flipper_3 -->
+    <body name="flipper_3" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="flipper_3_freejoint"/>
+      <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+      <!-- Part flipper_3 -->
+      <geom type="mesh" class="visual" pos="-0.0375289 0.11635 -0.100958" quat="1.21767e-07 9.4042e-08 -0.707107 0.707107" mesh="flipper" material="flipper_material"/>
+      <geom type="mesh" class="collision" pos="-0.0375289 0.11635 -0.100958" quat="1.21767e-07 9.4042e-08 -0.707107 0.707107" mesh="flipper" material="flipper_material"/>
+    </body>
+    <!-- Link flipper_4 -->
+    <body name="flipper_4" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="flipper_4_freejoint"/>
+      <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+      <!-- Part flipper_4 -->
+      <geom type="mesh" class="visual" pos="-0.494729 0.11635 -0.100958" quat="0.707107 0.707107 9.4042e-08 -1.21767e-07" mesh="flipper" material="flipper_material"/>
+      <geom type="mesh" class="collision" pos="-0.494729 0.11635 -0.100958" quat="0.707107 0.707107 9.4042e-08 -1.21767e-07" mesh="flipper" material="flipper_material"/>
+    </body>
+    <!-- Link part_1_9 -->
+    <body name="part_1_9" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="part_1_9_freejoint"/>
+      <inertial pos="-0.0375289 0.1889 -0.100958" mass="5.36566" fullinertia="0.0699654 0.12389 0.0699654 2.114e-09 -0 -2.231e-09"/>
+      <!-- Part part_1_9 -->
+      <geom type="mesh" class="visual" pos="-0.0375289 0.14135 -0.100958" quat="0.707107 -0.707107 1.21767e-07 9.4042e-08" mesh="part_1" material="part_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0375289 0.14135 -0.100958" quat="0.707107 -0.707107 1.21767e-07 9.4042e-08" mesh="part_1" material="part_1_material"/>
+    </body>
+    <!-- Link part_1_10 -->
+    <body name="part_1_10" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="part_1_10_freejoint"/>
+      <inertial pos="-0.494729 0.1889 -0.100958" mass="5.36566" fullinertia="0.0699654 0.12389 0.0699654 2.114e-09 0 -2.231e-09"/>
+      <!-- Part part_1_10 -->
+      <geom type="mesh" class="visual" pos="-0.494729 0.14135 -0.100958" quat="0.707107 -0.707107 1.21767e-07 9.4042e-08" mesh="part_1" material="part_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.494729 0.14135 -0.100958" quat="0.707107 -0.707107 1.21767e-07 9.4042e-08" mesh="part_1" material="part_1_material"/>
+    </body>
+    <!-- Link part_1_11 -->
+    <body name="part_1_11" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="part_1_11_freejoint"/>
+      <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+      <!-- Part part_1_11 -->
+      <geom type="mesh" class="visual" pos="0.318071 0.14135 -0.100958" quat="0.707107 -0.707107 1.21767e-07 9.4042e-08" mesh="part_1__2" material="part_1__2_material"/>
+      <geom type="mesh" class="collision" pos="0.318071 0.14135 -0.100958" quat="0.707107 -0.707107 1.21767e-07 9.4042e-08" mesh="part_1__2" material="part_1__2_material"/>
+    </body>
+    <!-- Link part_1_12 -->
+    <body name="part_1_12" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="part_1_12_freejoint"/>
+      <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+      <!-- Part part_1_12 -->
+      <geom type="mesh" class="visual" pos="-0.850329 0.14135 -0.100958" quat="0.707107 -0.707107 1.21767e-07 9.4042e-08" mesh="part_1__2" material="part_1__2_material"/>
+      <geom type="mesh" class="collision" pos="-0.850329 0.14135 -0.100958" quat="0.707107 -0.707107 1.21767e-07 9.4042e-08" mesh="part_1__2" material="part_1__2_material"/>
+    </body>
+  </worldbody>
+  <asset>
+    <mesh file="part_1__2.stl"/>
+    <mesh file="l3.stl"/>
+    <mesh file="flipper.stl"/>
+    <mesh file="lidar.stl"/>
+    <mesh file="camera.stl"/>
+    <mesh file="part_6.stl"/>
+    <mesh file="l1.stl"/>
+    <mesh file="part_8.stl"/>
+    <mesh file="base.stl"/>
+    <mesh file="l2.stl"/>
+    <mesh file="l0.stl"/>
+    <mesh file="part_1.stl"/>
+    <mesh file="part_7.stl"/>
+    <mesh file="chassis.stl"/>
+    <material name="base_material" rgba="0.8 0.776471 0.713725 1"/>
+    <material name="chassis_material" rgba="0.811765 0.858824 0.898039 1"/>
+    <material name="part_1_material" rgba="0.4 0.4 0.4 1"/>
+    <material name="lidar_material" rgba="0.372549 0.654902 0.239216 1"/>
+    <material name="l0_material" rgba="0.8 0.776471 0.713725 1"/>
+    <material name="l1_material" rgba="0.8 0.776471 0.713725 1"/>
+    <material name="l2_material" rgba="0.8 0.776471 0.713725 1"/>
+    <material name="l3_material" rgba="0.8 0.776471 0.713725 1"/>
+    <material name="part_6_material" rgba="0.8 0.776471 0.713725 1"/>
+    <material name="part_7_material" rgba="0.8 0.776471 0.713725 1"/>
+    <material name="part_8_material" rgba="0.498039 0.498039 0.498039 1"/>
+    <material name="camera_material" rgba="1 0 0 1"/>
+    <material name="flipper_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="part_1__2_material" rgba="0.4 0.4 0.4 1"/>
+  </asset>
+  <actuator>
+    <position class="rover" name="FL_drive" joint="FL_drive"/>
+    <position class="rover" name="BL_drive" joint="BL_drive"/>
+    <position class="rover" name="FR_drive" joint="FR_drive"/>
+    <position class="rover" name="BR_drive" joint="BR_drive"/>
+    <position class="rover" name="base_l0" joint="base_l0"/>
+    <position class="rover" name="l0_l1" joint="l0_l1"/>
+    <position class="rover" name="l2_l3" joint="l2_l3"/>
+    <position class="rover" name="l4_l5" joint="l4_l5"/>
+    <position class="rover" name="l5_ee" joint="l5_ee"/>
+  </actuator>
+  <equality/>
+</mujoco>
