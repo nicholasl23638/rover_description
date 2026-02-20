@@ -3,7 +3,7 @@
   "package_name": "rover_description",
   "assets_directory": "meshes",
   "output_filename": "urdf/robot",
-  "output_format": "urdf",
+  "output_format": "mujoco",
   "document_id": "b6ac805677604f50f29b90bd", 
   "workspace_id": "f7cf7502a4385f463da6ef04",
   "element_id": "0d33c74b8db9f500c393148b",
