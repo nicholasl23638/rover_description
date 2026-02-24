@@ -1,0 +1,14 @@
+{
+    "configuration": "LENGTH=0.5+meter",
+    "documentId": "4fed6e2d284c90fbb7b4de16",
+    "documentMicroversion": "381166a0867c25186fabcd1f",
+    "documentVersion": "d6a7f9505bc2624f702335c7",
+    "elementId": "0d92b0c7c15ade6621036b2c",
+    "fullConfiguration": "LENGTH=0.5+meter",
+    "id": "MadbjiFmEbqsPtjvZ",
+    "isStandardContent": false,
+    "name": "Part 1 <19>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}
