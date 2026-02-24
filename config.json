@@ -4,8 +4,8 @@
   "assets_directory": "meshes",
   "output_filename": "urdf/robot",
   "output_format": "mujoco",
-  "document_id": "b6ac805677604f50f29b90bd", 
-  "workspace_id": "f7cf7502a4385f463da6ef04",
-  "element_id": "0d33c74b8db9f500c393148b",
-  "assembly_name": "rover_assembly"
+  "document_id": "5d083538c77f86c43f4af244", 
+  "workspace_id": "1813d09dc14fcef15b8b4394",
+  "element_id": "cfe0eff86787a4a1b4c32143",
+  "assembly_name": "RoverAsm_Sim"
 }
