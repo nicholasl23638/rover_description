@@ -1,13 +1,13 @@
 {
     "configuration": "default",
     "documentId": "dccc9867c88f4c00ebd285c5",
-    "documentMicroversion": "f948bef5d77c4c57088e360f",
+    "documentMicroversion": "9436e86479b7933398663aac",
     "elementId": "96854a19af82b2e3223ebdab",
     "fullConfiguration": "default",
-    "id": "M3T0q6J+sJdcZ1Ajb",
+    "id": "Mgy086CdgJQdLJ13H",
     "isStandardContent": false,
-    "name": "H42P-020-S300-R_DUMMY2 <5>",
-    "partId": "JnD",
+    "name": "H42P-020-S300-R_DUMMY2 <2>",
+    "partId": "JUD",
     "suppressed": false,
     "type": "Part"
 }
