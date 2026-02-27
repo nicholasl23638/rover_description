@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "8d8eaaba74a51ef105f98f02",
+    "documentMicroversion": "68540bbb890f0415c7c5ec40",
+    "documentVersion": "89f84b1cb28d34bacdae82f9",
+    "elementId": "03fd5d9322ddd12e53d380cb",
+    "fullConfiguration": "default",
+    "id": "MssZksSra4FpPOnkc",
+    "isStandardContent": false,
+    "name": "MPN23-12 - MOTOR DE PASSO NEMA 23 v3 <4>",
+    "partId": "JFH",
+    "suppressed": false,
+    "type": "Part"
+}

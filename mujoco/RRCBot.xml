@@ -1,0 +1,584 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: 5d083538c77f86c43f4af244 / workspace_id: 1813d09dc14fcef15b8b4394 -->
+<mujoco model="rover">
+  <compiler angle="radian" meshdir="RRCmeshes" autolimits="true"/>
+  <default>
+    <default class="rover">
+      <joint frictionloss="0.1" armature="0.005"/>
+      <position kp="50" dampratio="1"/>
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+      </default>
+      <default class="collision">
+        <geom group="3"/>
+      </default>
+    </default>
+  </default>
+  <worldbody>
+    <!-- Link part_5 -->
+    <body name="part_5" pos="0 0 0" quat="1 0 0 0" childclass="rover">
+      <freejoint name="part_5_freejoint"/>
+      <inertial pos="0.27221 0.251591 -0.173877" mass="0.572125" fullinertia="0.0126157 0.00165273 0.0110006 4.97713e-07 5.93295e-06 -0.000254906"/>
+      <!-- Part bracket -->
+      <geom type="mesh" class="visual" pos="0.277069 0.344565 -0.136468" quat="0.5 -0.5 -0.5 0.5" mesh="bracket" material="bracket_material"/>
+      <geom type="mesh" class="collision" pos="0.277069 0.344565 -0.136468" quat="0.5 -0.5 -0.5 0.5" mesh="bracket" material="bracket_material"/>
+      <!-- Part part_6 -->
+      <geom type="mesh" class="visual" pos="0.242069 -0.00456324 -0.00148218" quat="0.707107 0 -0 0.707107" mesh="part_6" material="part_6_material"/>
+      <geom type="mesh" class="collision" pos="0.242069 -0.00456324 -0.00148218" quat="0.707107 0 -0 0.707107" mesh="part_6" material="part_6_material"/>
+      <!-- Part part_7 -->
+      <geom type="mesh" class="visual" pos="0.242069 -0.00456324 -0.00148218" quat="0.707107 0 -0 0.707107" mesh="part_7" material="part_7_material"/>
+      <geom type="mesh" class="collision" pos="0.242069 -0.00456324 -0.00148218" quat="0.707107 0 -0 0.707107" mesh="part_7" material="part_7_material"/>
+      <!-- Part bracket_2 -->
+      <geom type="mesh" class="visual" pos="0.267069 0.146309 -0.136468" quat="0.5 -0.5 0.5 -0.5" mesh="bracket" material="bracket_material"/>
+      <geom type="mesh" class="collision" pos="0.267069 0.146309 -0.136468" quat="0.5 -0.5 0.5 -0.5" mesh="bracket" material="bracket_material"/>
+      <!-- Part part_5 -->
+      <geom type="mesh" class="visual" pos="0.242069 -0.00456324 -0.00148218" quat="0.707107 0 -0 0.707107" mesh="part_5" material="part_5_material"/>
+      <geom type="mesh" class="collision" pos="0.242069 -0.00456324 -0.00148218" quat="0.707107 0 -0 0.707107" mesh="part_5" material="part_5_material"/>
+      <!-- Part part_12 -->
+      <geom type="mesh" class="visual" pos="0.242069 -0.00601317 -0.00148218" quat="0.707107 0 -0 0.707107" mesh="part_12" material="part_12_material"/>
+      <geom type="mesh" class="collision" pos="0.242069 -0.00601317 -0.00148218" quat="0.707107 0 -0 0.707107" mesh="part_12" material="part_12_material"/>
+      <!-- Part part_11 -->
+      <geom type="mesh" class="visual" pos="0.242069 -0.00456324 -0.00148218" quat="0.707107 0 -0 0.707107" mesh="part_11" material="part_11_material"/>
+      <geom type="mesh" class="collision" pos="0.242069 -0.00456324 -0.00148218" quat="0.707107 0 -0 0.707107" mesh="part_11" material="part_11_material"/>
+      <!-- Part gobilda_motor_adaptor -->
+      <geom type="mesh" class="visual" pos="0.282069 0.38604 -0.192085" quat="0.653281 -0.270598 -0.653281 0.270598" mesh="gobilda_motor_adaptor" material="gobilda_motor_adaptor_material"/>
+      <geom type="mesh" class="collision" pos="0.282069 0.38604 -0.192085" quat="0.653281 -0.270598 -0.653281 0.270598" mesh="gobilda_motor_adaptor" material="gobilda_motor_adaptor_material"/>
+      <!-- Part gobilda_motor_adaptor_2 -->
+      <geom type="mesh" class="visual" pos="0.282069 0.104834 -0.192085" quat="0.270598 -0.653281 -0.270598 0.653281" mesh="gobilda_motor_adaptor" material="gobilda_motor_adaptor_material"/>
+      <geom type="mesh" class="collision" pos="0.282069 0.104834 -0.192085" quat="0.270598 -0.653281 -0.270598 0.653281" mesh="gobilda_motor_adaptor" material="gobilda_motor_adaptor_material"/>
+      <!-- Link part_9 -->
+      <body name="part_9" pos="0.262069 0.245437 -0.101482" quat="0.5 0.5 0.5 0.5">
+        <!-- Joint from part_5 to part_9 -->
+        <joint axis="0 0 1" name="R_bogie" type="hinge"/>
+        <inertial pos="-0.289748 0.00297729 -0.0099306" mass="0.582658" fullinertia="0.00383456 0.020612 0.0244086 -0.00559382 1.04732e-05 6.0142e-06"/>
+        <!-- Part part_3 -->
+        <geom type="mesh" class="visual" pos="-0.25 0.1 -0.02" quat="0.707107 -0.707107 0 -0" mesh="part_3" material="part_3_material"/>
+        <geom type="mesh" class="collision" pos="-0.25 0.1 -0.02" quat="0.707107 -0.707107 0 -0" mesh="part_3" material="part_3_material"/>
+        <!-- Part part_9 -->
+        <geom type="mesh" class="visual" pos="-0.25 0.1 -0.02" quat="0.707107 -0.707107 0 -0" mesh="part_9" material="part_9_material"/>
+        <geom type="mesh" class="collision" pos="-0.25 0.1 -0.02" quat="0.707107 -0.707107 0 -0" mesh="part_9" material="part_9_material"/>
+        <!-- Part part_1 -->
+        <geom type="mesh" class="visual" pos="-0.25 0.1 -0.02" quat="0.707107 -0.707107 0 -0" mesh="part_1" material="part_1_material"/>
+        <geom type="mesh" class="collision" pos="-0.25 0.1 -0.02" quat="0.707107 -0.707107 0 -0" mesh="part_1" material="part_1_material"/>
+        <!-- Part bracket_3 -->
+        <geom type="mesh" class="visual" pos="-0.0862074 0.065014 -0.015" quat="0.92388 0 -0 -0.382683" mesh="bracket" material="bracket_material"/>
+        <geom type="mesh" class="collision" pos="-0.0862074 0.065014 -0.015" quat="0.92388 0 -0 -0.382683" mesh="bracket" material="bracket_material"/>
+        <!-- Part gobilda_motor_adaptor_3 -->
+        <geom type="mesh" class="visual" pos="-0.493603 -0.090603 0" quat="0 0.92388 -0.382683 -0" mesh="gobilda_motor_adaptor" material="gobilda_motor_adaptor_material"/>
+        <geom type="mesh" class="collision" pos="-0.493603 -0.090603 0" quat="0 0.92388 -0.382683 -0" mesh="gobilda_motor_adaptor" material="gobilda_motor_adaptor_material"/>
+        <!-- Part bearing_block -->
+        <geom type="mesh" class="visual" pos="-0.25 0.1 -0.02" quat="0.707107 -0.707107 0 -0" mesh="bearing_block" material="bearing_block_material"/>
+        <geom type="mesh" class="collision" pos="-0.25 0.1 -0.02" quat="0.707107 -0.707107 0 -0" mesh="bearing_block" material="bearing_block_material"/>
+        <!-- Part bracket_4 -->
+        <geom type="mesh" class="visual" pos="-0.352128 0.065014 -0.015" quat="0 -0 0 -1" mesh="bracket" material="bracket_material"/>
+        <geom type="mesh" class="collision" pos="-0.352128 0.065014 -0.015" quat="0 -0 0 -1" mesh="bracket" material="bracket_material"/>
+        <!-- Part part_2 -->
+        <geom type="mesh" class="visual" pos="-0.25 0.1 -0.02" quat="0.707107 -0.707107 -0 0" mesh="part_2" material="part_2_material"/>
+        <geom type="mesh" class="collision" pos="-0.25 0.1 -0.02" quat="0.707107 -0.707107 -0 0" mesh="part_2" material="part_2_material"/>
+        <!-- Link chassis_body -->
+        <body name="chassis_body" pos="-0.25 0.1 -0.02" quat="1 -0 0 -0">
+          <!-- Joint from part_9 to chassis_body -->
+          <joint axis="0 0 1" name="R_to_chassis" type="hinge"/>
+          <inertial pos="0.0316442 0.00139075 -0.250007" mass="64.5252" fullinertia="2.98411 5.60696 4.44336 0.0317865 -0.000257973 0.000133973"/>
+          <!-- Part part_7_2 -->
+          <geom type="mesh" class="visual" pos="-0.351399 0.20487 0.020316" quat="0 -1 -0 -0" mesh="part_7__2" material="part_7__2_material"/>
+          <geom type="mesh" class="collision" pos="-0.351399 0.20487 0.020316" quat="0 -1 -0 -0" mesh="part_7__2" material="part_7__2_material"/>
+          <!-- Part mpn23_12___motor_de_passo_nema_23_v3 -->
+          <geom type="mesh" class="visual" pos="-0.351399 0.204992 0.071" quat="0.707107 -0 -0 0.707107" mesh="mpn23_12___motor_de_passo_nema_23_v3" material="mpn23_12___motor_de_passo_nema_23_v3_material"/>
+          <geom type="mesh" class="collision" pos="-0.351399 0.204992 0.071" quat="0.707107 -0 -0 0.707107" mesh="mpn23_12___motor_de_passo_nema_23_v3" material="mpn23_12___motor_de_passo_nema_23_v3_material"/>
+          <!-- Part chassis_body -->
+          <geom type="mesh" class="visual" pos="0 -0.15 -0.25" quat="0.5 -0.5 -0.5 -0.5" mesh="chassis_body" material="chassis_body_material"/>
+          <geom type="mesh" class="collision" pos="0 -0.15 -0.25" quat="0.5 -0.5 -0.5 -0.5" mesh="chassis_body" material="chassis_body_material"/>
+          <!-- Part mpn23_12___motor_de_passo_nema_23_v3_2 -->
+          <geom type="mesh" class="visual" pos="-0.351399 0.20487 0.015" quat="0 -1 0 0" mesh="mpn23_12___motor_de_passo_nema_23_v3__2" material="mpn23_12___motor_de_passo_nema_23_v3__2_material"/>
+          <geom type="mesh" class="collision" pos="-0.351399 0.20487 0.015" quat="0 -1 0 0" mesh="mpn23_12___motor_de_passo_nema_23_v3__2" material="mpn23_12___motor_de_passo_nema_23_v3__2_material"/>
+          <!-- Part lead_screw -->
+          <geom type="mesh" class="visual" pos="-0.351399 0.20487 -0.5097" quat="0.707107 0 -0 -0.707107" mesh="lead_screw" material="lead_screw_material"/>
+          <geom type="mesh" class="collision" pos="-0.351399 0.20487 -0.5097" quat="0.707107 0 -0 -0.707107" mesh="lead_screw" material="lead_screw_material"/>
+          <!-- Part arm_bar -->
+          <geom type="mesh" class="visual" pos="-0.319649 0.16901 -0.5" quat="1 0 -0 0" mesh="arm_bar" material="arm_bar_material"/>
+          <geom type="mesh" class="collision" pos="-0.319649 0.16901 -0.5" quat="1 0 -0 0" mesh="arm_bar" material="arm_bar_material"/>
+          <!-- Part diff_coupler -->
+          <geom type="mesh" class="visual" pos="0.355 0 -0.25" quat="0 -0.707107 -0 -0.707107" mesh="diff_coupler" material="diff_coupler_material"/>
+          <geom type="mesh" class="collision" pos="0.355 0 -0.25" quat="0 -0.707107 -0 -0.707107" mesh="diff_coupler" material="diff_coupler_material"/>
+          <!-- Part mpn23_12___motor_de_passo_nema_23_v3_3 -->
+          <geom type="mesh" class="visual" pos="-0.351399 0.20487 0.071" quat="0.707107 0 -0 0.707107" mesh="mpn23_12___motor_de_passo_nema_23_v3__3" material="mpn23_12___motor_de_passo_nema_23_v3__3_material"/>
+          <geom type="mesh" class="collision" pos="-0.351399 0.20487 0.071" quat="0.707107 0 -0 0.707107" mesh="mpn23_12___motor_de_passo_nema_23_v3__3" material="mpn23_12___motor_de_passo_nema_23_v3__3_material"/>
+          <!-- Part mpn23_12___motor_de_passo_nema_23_v3_4 -->
+          <geom type="mesh" class="visual" pos="-0.351399 0.204992 0.071" quat="0.707107 0 0 0.707107" mesh="mpn23_12___motor_de_passo_nema_23_v3__4" material="mpn23_12___motor_de_passo_nema_23_v3__4_material"/>
+          <geom type="mesh" class="collision" pos="-0.351399 0.204992 0.071" quat="0.707107 0 0 0.707107" mesh="mpn23_12___motor_de_passo_nema_23_v3__4" material="mpn23_12___motor_de_passo_nema_23_v3__4_material"/>
+          <!-- Part 5mm_to_8mm_flexible_shaft_coupler -->
+          <geom type="mesh" class="visual" pos="-0.351399 0.20487 -0.0256" quat="0 -0 0 -1" mesh="5mm_to_8mm_flexible_shaft_coupler" material="5mm_to_8mm_flexible_shaft_coupler_material"/>
+          <geom type="mesh" class="collision" pos="-0.351399 0.20487 -0.0256" quat="0 -0 0 -1" mesh="5mm_to_8mm_flexible_shaft_coupler" material="5mm_to_8mm_flexible_shaft_coupler_material"/>
+          <!-- Part part_6_2 -->
+          <geom type="mesh" class="visual" pos="-0.351399 0.20487 0.015" quat="0 -1 -0 -0" mesh="part_6__2" material="part_6__2_material"/>
+          <geom type="mesh" class="collision" pos="-0.351399 0.20487 0.015" quat="0 -1 -0 -0" mesh="part_6__2" material="part_6__2_material"/>
+          <!-- Link bracket -->
+          <body name="bracket" pos="-0 0 -0.5" quat="1 0 -0 0">
+            <!-- Joint from chassis_body to bracket -->
+            <joint axis="0 0 1" name="L_to_chassis" type="hinge"/>
+            <inertial pos="-0.039748 -0.0970227 -0.0100694" mass="0.582658" fullinertia="0.00383456 0.020612 0.0244086 -0.00559382 -1.04732e-05 -6.0142e-06"/>
+            <!-- Part part_3_2 -->
+            <geom type="mesh" class="visual" pos="0 0 -0.02" quat="0.707107 -0.707107 -0 0" mesh="part_3" material="part_3_material"/>
+            <geom type="mesh" class="collision" pos="0 0 -0.02" quat="0.707107 -0.707107 -0 0" mesh="part_3" material="part_3_material"/>
+            <!-- Part bearing_block_2 -->
+            <geom type="mesh" class="visual" pos="0 -0 -0.02" quat="0.707107 -0.707107 0 0" mesh="bearing_block" material="bearing_block_material"/>
+            <geom type="mesh" class="collision" pos="0 -0 -0.02" quat="0.707107 -0.707107 0 0" mesh="bearing_block" material="bearing_block_material"/>
+            <!-- Part part_9_2 -->
+            <geom type="mesh" class="visual" pos="0 0 -0.02" quat="0.707107 -0.707107 0 -0" mesh="part_9" material="part_9_material"/>
+            <geom type="mesh" class="collision" pos="0 0 -0.02" quat="0.707107 -0.707107 0 -0" mesh="part_9" material="part_9_material"/>
+            <!-- Part bracket_5 -->
+            <geom type="mesh" class="visual" pos="-0.102128 -0.034986 -0.015" quat="0 0 -0 -1" mesh="bracket" material="bracket_material"/>
+            <geom type="mesh" class="collision" pos="-0.102128 -0.034986 -0.015" quat="0 0 -0 -1" mesh="bracket" material="bracket_material"/>
+            <!-- Part part_2_2 -->
+            <geom type="mesh" class="visual" pos="-0 0 -0.02" quat="0.707107 -0.707107 0 -0" mesh="part_2" material="part_2_material"/>
+            <geom type="mesh" class="collision" pos="-0 0 -0.02" quat="0.707107 -0.707107 0 -0" mesh="part_2" material="part_2_material"/>
+            <!-- Part bracket_6 -->
+            <geom type="mesh" class="visual" pos="0.163793 -0.034986 -0.015" quat="0.92388 0 0 -0.382683" mesh="bracket" material="bracket_material"/>
+            <geom type="mesh" class="collision" pos="0.163793 -0.034986 -0.015" quat="0.92388 0 0 -0.382683" mesh="bracket" material="bracket_material"/>
+            <!-- Part part_1_2 -->
+            <geom type="mesh" class="visual" pos="-0 0 -0.02" quat="0.707107 -0.707107 0 0" mesh="part_1" material="part_1_material"/>
+            <geom type="mesh" class="collision" pos="-0 0 -0.02" quat="0.707107 -0.707107 0 0" mesh="part_1" material="part_1_material"/>
+            <!-- Part gobilda_motor_adaptor_4 -->
+            <geom type="mesh" class="visual" pos="-0.243603 -0.190603 -0.02" quat="0.382683 -0 0 0.92388" mesh="gobilda_motor_adaptor" material="gobilda_motor_adaptor_material"/>
+            <geom type="mesh" class="collision" pos="-0.243603 -0.190603 -0.02" quat="0.382683 -0 0 0.92388" mesh="gobilda_motor_adaptor" material="gobilda_motor_adaptor_material"/>
+            <!-- Link bracket_2 -->
+            <body name="bracket_2" pos="0.25 -0.1 -0.02" quat="1 0 -0 -0">
+              <!-- Joint from bracket to bracket_2 -->
+              <joint axis="0 0 1" name="L_bogie" type="hinge"/>
+              <inertial pos="0.00615436 -0.0723947 -0.0101414" mass="0.572125" fullinertia="0.00165273 0.0110006 0.0126157 -0.000254906 -4.97713e-07 -5.93295e-06"/>
+              <!-- Part gobilda_motor_adaptor_5 -->
+              <geom type="mesh" class="visual" pos="0.140603 -0.090603 -0.02" quat="0.382683 -0 -0 -0.92388" mesh="gobilda_motor_adaptor" material="gobilda_motor_adaptor_material"/>
+              <geom type="mesh" class="collision" pos="0.140603 -0.090603 -0.02" quat="0.382683 -0 -0 -0.92388" mesh="gobilda_motor_adaptor" material="gobilda_motor_adaptor_material"/>
+              <!-- Part part_12_2 -->
+              <geom type="mesh" class="visual" pos="-0.25145 0.1 -0.04" quat="0.707107 -0.707107 0 -0" mesh="part_12" material="part_12_material"/>
+              <geom type="mesh" class="collision" pos="-0.25145 0.1 -0.04" quat="0.707107 -0.707107 0 -0" mesh="part_12" material="part_12_material"/>
+              <!-- Part gobilda_motor_adaptor_6 -->
+              <geom type="mesh" class="visual" pos="-0.140603 -0.090603 -0.02" quat="0.382683 0 -0 0.92388" mesh="gobilda_motor_adaptor" material="gobilda_motor_adaptor_material"/>
+              <geom type="mesh" class="collision" pos="-0.140603 -0.090603 -0.02" quat="0.382683 0 -0 0.92388" mesh="gobilda_motor_adaptor" material="gobilda_motor_adaptor_material"/>
+              <!-- Part part_5_2 -->
+              <geom type="mesh" class="visual" pos="-0.25 0.1 -0.04" quat="0.707107 -0.707107 0 -0" mesh="part_5" material="part_5_material"/>
+              <geom type="mesh" class="collision" pos="-0.25 0.1 -0.04" quat="0.707107 -0.707107 0 -0" mesh="part_5" material="part_5_material"/>
+              <!-- Part part_7_3 -->
+              <geom type="mesh" class="visual" pos="-0.25 0.1 -0.04" quat="0.707107 -0.707107 0 -0" mesh="part_7" material="part_7_material"/>
+              <geom type="mesh" class="collision" pos="-0.25 0.1 -0.04" quat="0.707107 -0.707107 0 -0" mesh="part_7" material="part_7_material"/>
+              <!-- Part part_11_2 -->
+              <geom type="mesh" class="visual" pos="-0.25 0.1 -0.04" quat="0.707107 -0.707107 0 -0" mesh="part_11" material="part_11_material"/>
+              <geom type="mesh" class="collision" pos="-0.25 0.1 -0.04" quat="0.707107 -0.707107 0 -0" mesh="part_11" material="part_11_material"/>
+              <!-- Part part_6_3 -->
+              <geom type="mesh" class="visual" pos="-0.25 0.1 -0.04" quat="0.707107 -0.707107 0 -0" mesh="part_6" material="part_6_material"/>
+              <geom type="mesh" class="collision" pos="-0.25 0.1 -0.04" quat="0.707107 -0.707107 0 -0" mesh="part_6" material="part_6_material"/>
+              <!-- Part bracket_7 -->
+              <geom type="mesh" class="visual" pos="0.0991281 -0.034986 -0.005" quat="0 -1 0 0" mesh="bracket" material="bracket_material"/>
+              <geom type="mesh" class="collision" pos="0.0991281 -0.034986 -0.005" quat="0 -1 0 0" mesh="bracket" material="bracket_material"/>
+              <!-- Part bracket_8 -->
+              <geom type="mesh" class="visual" pos="-0.0991281 -0.034986 -0.015" quat="0 0 -0 1" mesh="bracket" material="bracket_material"/>
+              <geom type="mesh" class="collision" pos="-0.0991281 -0.034986 -0.015" quat="0 0 -0 1" mesh="bracket" material="bracket_material"/>
+              <!-- Link part_4 -->
+              <body name="part_4" pos="0.113564 -0 -0" quat="0 1 -0 -0">
+                <!-- Joint from bracket_2 to part_4 -->
+                <joint axis="0 0 1" name="L_diff" type="ball"/>
+                <inertial pos="0.0173315 -0.0336824 -0.0099895" mass="0.101041" fullinertia="0.000178852 2.16186e-05 0.000193628 2.60663e-05 -1.0721e-08 -6.4589e-08"/>
+                <!-- Part part_4 -->
+                <geom type="mesh" class="visual" pos="-0.365032 -0.0999306 -0.000757731" quat="0.706872 0.707341 -0.000736726 0.000602775" mesh="part_4" material="part_4_material"/>
+                <geom type="mesh" class="collision" pos="-0.365032 -0.0999306 -0.000757731" quat="0.706872 0.707341 -0.000736726 0.000602775" mesh="part_4" material="part_4_material"/>
+                <!-- Part part_10 -->
+                <geom type="mesh" class="visual" pos="-0.365032 -0.0999306 -0.000757731" quat="0.706872 0.707341 -0.000736726 0.000602775" mesh="part_10" material="part_10_material"/>
+                <geom type="mesh" class="collision" pos="-0.365032 -0.0999306 -0.000757731" quat="0.706872 0.707341 -0.000736726 0.000602775" mesh="part_10" material="part_10_material"/>
+                <!-- Frame closing_dof_L_ball2diff_1 -->
+                <site group="3" name="closing_dof_L_ball2diff_1" pos="0.034986 -0.1 -0.01" quat="0.000167344 -0.706437 0.000301294 -0.707776"/>
+              </body>
+              <!-- Link tire -->
+              <body name="tire" pos="-0.195757 -0.145757 -0.02" quat="0.382683 0 0 -0.92388">
+                <!-- Joint from bracket_2 to tire -->
+                <joint axis="0 0 1" name="L_wheel_bogie"/>
+                <inertial pos="0 0 -0.0349958" mass="0.9189" fullinertia="0.00387282 0.00387282 0.00641687 -0 -0 -0"/>
+                <!-- Part tire -->
+                <geom type="mesh" class="visual" pos="0 0 -0" quat="0 1 0 0" mesh="tire" material="tire_material"/>
+                <geom type="mesh" class="collision" pos="0 0 -0" quat="0 1 0 0" mesh="tire" material="tire_material"/>
+                <!-- Part wheel -->
+                <geom type="mesh" class="visual" pos="-0 0 0" quat="0 1 0 0" mesh="wheel" material="wheel_material"/>
+                <geom type="mesh" class="collision" pos="-0 0 0" quat="0 1 0 0" mesh="wheel" material="wheel_material"/>
+              </body>
+              <!-- Link tire_2 -->
+              <body name="tire_2" pos="0.195757 -0.145757 -0.02" quat="0.937749 -0 0 -0.347314">
+                <!-- Joint from bracket_2 to tire_2 -->
+                <joint axis="0 0 1" name="L_wheel_diff"/>
+                <inertial pos="0 -0 -0.0349958" mass="0.9189" fullinertia="0.00387282 0.00387282 0.00641687 0 -0 -0"/>
+                <!-- Part wheel_2 -->
+                <geom type="mesh" class="visual" pos="0 0 0" quat="0 1 0 0" mesh="wheel" material="wheel_material"/>
+                <geom type="mesh" class="collision" pos="0 0 0" quat="0 1 0 0" mesh="wheel" material="wheel_material"/>
+                <!-- Part tire_2 -->
+                <geom type="mesh" class="visual" pos="0 -0 0" quat="0 1 0 0" mesh="tire" material="tire_material"/>
+                <geom type="mesh" class="collision" pos="0 -0 0" quat="0 1 0 0" mesh="tire" material="tire_material"/>
+              </body>
+            </body>
+            <!-- Link tire_3 -->
+            <body name="tire_3" pos="-0.298757 -0.245757 -0.02" quat="0.926211 -0 -0 0.377005">
+              <!-- Joint from bracket to tire_3 -->
+              <joint axis="0 0 1" name="L_wheel_rocker"/>
+              <inertial pos="0 0 -0.0349958" mass="0.9189" fullinertia="0.00387282 0.00387282 0.00641687 -0 0 -0"/>
+              <!-- Part tire_3 -->
+              <geom type="mesh" class="visual" pos="0 -0 0" quat="0 1 0 -0" mesh="tire" material="tire_material"/>
+              <geom type="mesh" class="collision" pos="0 -0 0" quat="0 1 0 -0" mesh="tire" material="tire_material"/>
+              <!-- Part wheel_3 -->
+              <geom type="mesh" class="visual" pos="0 0 0" quat="0 1 0 0" mesh="wheel" material="wheel_material"/>
+              <geom type="mesh" class="collision" pos="0 0 0" quat="0 1 0 0" mesh="wheel" material="wheel_material"/>
+            </body>
+          </body>
+          <!-- Link diff_bar -->
+          <body name="diff_bar" pos="0.39855 0 -0.25" quat="0.707107 0 -0.707107 0">
+            <!-- Joint from chassis_body to diff_bar -->
+            <joint axis="0 0 1" name="diff_bar" type="hinge" range="-0.2617993877991405 0.2617993877991583"/>
+            <inertial pos="0 0 -0.0125" mass="0.330137" fullinertia="2.83986e-05 0.00788657 0.00788058 0 -0 0"/>
+            <!-- Part diff_bar -->
+            <geom type="mesh" class="visual" pos="0 0 0" quat="0.707107 0.707107 0 0" mesh="diff_bar" material="diff_bar_material"/>
+            <geom type="mesh" class="collision" pos="0 0 0" quat="0.707107 0.707107 0 0" mesh="diff_bar" material="diff_bar_material"/>
+            <!-- Frame closing_dof_L_ball2diff_2 -->
+            <site group="3" name="closing_dof_L_ball2diff_2" pos="-0.26 0 -0" quat="0 0 1 0"/>
+            <!-- Frame closing_dof_R_ball2diff_2 -->
+            <site group="3" name="closing_dof_R_ball2diff_2" pos="0.26 -0 0" quat="0 0 1 0"/>
+          </body>
+          <!-- Link generic_motor -->
+          <body name="generic_motor" pos="-0.351399 0.20487 -0.0556" quat="0 0.707107 -0.707107 -0">
+            <!-- Joint from chassis_body to generic_motor -->
+            <joint axis="0 0 1" name="arm_gantry" type="slide" range="0.0 -0.03"/>
+            <inertial pos="-0.0314863 -0.0214771 -0.00144183" mass="0.237888" fullinertia="0.000577977 0.000465377 0.000777286 -3.46041e-06 -0.000138479 -1.54121e-06"/>
+            <!-- Part generic_motor -->
+            <geom type="mesh" class="visual" pos="-0.056005 -0.0789 -0.0740415" quat="0 0 -0 1" mesh="generic_motor" material="generic_motor_material"/>
+            <geom type="mesh" class="collision" pos="-0.056005 -0.0789 -0.0740415" quat="0 0 -0 1" mesh="generic_motor" material="generic_motor_material"/>
+            <!-- Part 1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348 -->
+            <geom type="mesh" class="visual" pos="-0.056005 0.0354 -0.026325" quat="0.5 -0.5 0.5 -0.5" mesh="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348" material="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348_material"/>
+            <geom type="mesh" class="collision" pos="-0.056005 0.0354 -0.026325" quat="0.5 -0.5 0.5 -0.5" mesh="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348" material="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348_material"/>
+            <!-- Part 6inch_shorter_arm_body -->
+            <geom type="mesh" class="visual" pos="-0.07188 -0.09795 0.005425" quat="0.707107 -0.707107 0 0" mesh="6inch_shorter_arm_body" material="6inch_shorter_arm_body_material"/>
+            <geom type="mesh" class="collision" pos="-0.07188 -0.09795 0.005425" quat="0.707107 -0.707107 0 0" mesh="6inch_shorter_arm_body" material="6inch_shorter_arm_body_material"/>
+            <!-- Part ros4_mounting_plate -->
+            <geom type="mesh" class="visual" pos="-0.056005 -0.02175 -0.028865" quat="0 0 -0.707107 -0.707107" mesh="ros4_mounting_plate" material="ros4_mounting_plate_material"/>
+            <geom type="mesh" class="collision" pos="-0.056005 -0.02175 -0.028865" quat="0 0 -0.707107 -0.707107" mesh="ros4_mounting_plate" material="ros4_mounting_plate_material"/>
+            <!-- Part ros4_to_hex_adapter -->
+            <geom type="mesh" class="visual" pos="-0.056005 -0.05985 -0.017054" quat="0.707107 -0.707107 0 -0" mesh="ros4_to_hex_adapter" material="ros4_to_hex_adapter_material"/>
+            <geom type="mesh" class="collision" pos="-0.056005 -0.05985 -0.017054" quat="0.707107 -0.707107 0 -0" mesh="ros4_to_hex_adapter" material="ros4_to_hex_adapter_material"/>
+            <!-- Part mounting_to_gantry -->
+            <geom type="mesh" class="visual" pos="-0.056005 -0.02175 -0.026325" quat="0.707107 -0.707107 0 0" mesh="mounting_to_gantry" material="mounting_to_gantry_material"/>
+            <geom type="mesh" class="collision" pos="-0.056005 -0.02175 -0.026325" quat="0.707107 -0.707107 0 0" mesh="mounting_to_gantry" material="mounting_to_gantry_material"/>
+            <!-- Part 1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348_2 -->
+            <geom type="mesh" class="visual" pos="-0.056005 -0.0789 -0.026325" quat="0.5 -0.5 0.5 -0.5" mesh="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348" material="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348_material"/>
+            <geom type="mesh" class="collision" pos="-0.056005 -0.0789 -0.026325" quat="0.5 -0.5 0.5 -0.5" mesh="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348" material="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348_material"/>
+            <!-- Part v_slot_gantry_plate_20_80mm -->
+            <geom type="mesh" class="visual" pos="0.02032 -0.02175 0.0223" quat="0.5 0.5 0.5 0.5" mesh="v_slot_gantry_plate_20_80mm" material="v_slot_gantry_plate_20_80mm_material"/>
+            <geom type="mesh" class="collision" pos="0.02032 -0.02175 0.0223" quat="0.5 0.5 0.5 0.5" mesh="v_slot_gantry_plate_20_80mm" material="v_slot_gantry_plate_20_80mm_material"/>
+            <!-- Part anycubic_lead_nut_8mm_4_start -->
+            <geom type="mesh" class="visual" pos="0 0 0.0166" quat="0 1 0 0" mesh="anycubic_lead_nut_8mm_4_start" material="anycubic_lead_nut_8mm_4_start_material"/>
+            <geom type="mesh" class="collision" pos="0 0 0.0166" quat="0 1 0 0" mesh="anycubic_lead_nut_8mm_4_start" material="anycubic_lead_nut_8mm_4_start_material"/>
+            <!-- Link 20inch_longer_arm_body -->
+            <body name="20inch_longer_arm_body" pos="-0.056005 0.0354 0.005425" quat="0 1 -0 -0">
+              <!-- Joint from generic_motor to 20inch_longer_arm_body -->
+              <joint axis="0 0 1" name="arm_4" type="hinge"/>
+              <inertial pos="-0.172659 -0.159343 -0.016875" mass="0.490242" fullinertia="0.00478941 0.0055997 0.0102555 -0.00504266 -0 0"/>
+              <!-- Part 20inch_longer_arm_body -->
+              <geom type="mesh" class="visual" pos="0.0419922 -0.0174123 -0.03275" quat="0.647727 0.647727 -0.283636 -0.283636" mesh="20inch_longer_arm_body" material="20inch_longer_arm_body_material"/>
+              <geom type="mesh" class="collision" pos="0.0419922 -0.0174123 -0.03275" quat="0.647727 0.647727 -0.283636 -0.283636" mesh="20inch_longer_arm_body" material="20inch_longer_arm_body_material"/>
+              <!-- Frame closing_for_l0_1 -->
+              <site group="3" name="closing_for_l0_1" pos="-0.345318 -0.318687 -0.001" quat="0.916024 -0 0 -0.401122"/>
+              <!-- Frame closing_for_l0_1_z -->
+              <site group="3" name="closing_for_l0_1_z" pos="-0.345318 -0.318687 0.099" quat="0.916024 -0 0 -0.401122"/>
+            </body>
+            <!-- Link 20inch_longer_arm_body_2 -->
+            <body name="20inch_longer_arm_body_2" pos="-0.056005 -0.0789 0.006425" quat="0 0.916024 0.401122 -0">
+              <!-- Joint from generic_motor to 20inch_longer_arm_body_2 -->
+              <joint axis="0 0 1" name="arm_5" type="hinge"/>
+              <inertial pos="0 -0.23495 -0.015875" mass="0.490242" fullinertia="0.0102535 0.000135645 0.0102555 -0 -0 -0"/>
+              <!-- Part 20inch_longer_arm_body_2 -->
+              <geom type="mesh" class="visual" pos="0.041275 -0.48895 -0" quat="0.707107 -0.707107 -0 -0" mesh="20inch_longer_arm_body" material="20inch_longer_arm_body_material"/>
+              <geom type="mesh" class="collision" pos="0.041275 -0.48895 -0" quat="0.707107 -0.707107 -0 -0" mesh="20inch_longer_arm_body" material="20inch_longer_arm_body_material"/>
+              <!-- Link shaft__a8dbc260d20f92cbbb229ff00947eab8 -->
+              <body name="shaft__a8dbc260d20f92cbbb229ff00947eab8" pos="-0 -0 -0.03175" quat="1 0 0 0">
+                <!-- Joint from 20inch_longer_arm_body_2 to shaft__a8dbc260d20f92cbbb229ff00947eab8 -->
+                <joint axis="0 0 1" name="arm_0" type="hinge"/>
+                <inertial pos="0.0586191 -0.0540983 -0.0137971" mass="0.268709" fullinertia="0.000544926 0.000581363 0.000536019 0.000226758 -4.46793e-05 4.12336e-05"/>
+                <!-- Part mounting_to_gantry_mirrored -->
+                <geom type="mesh" class="visual" pos="0.0419982 -0.0387592 0.0625" quat="0.647727 0.647727 0.283636 0.283636" mesh="mounting_to_gantry_mirrored" material="mounting_to_gantry_mirrored_material"/>
+                <geom type="mesh" class="collision" pos="0.0419982 -0.0387592 0.0625" quat="0.647727 0.647727 0.283636 0.283636" mesh="mounting_to_gantry_mirrored" material="mounting_to_gantry_mirrored_material"/>
+                <!-- Part generic_motor_2 -->
+                <geom type="mesh" class="visual" pos="0.0373317 -0.0344526 -0.08053" quat="0.401122 0 -0 -0.916024" mesh="generic_motor" material="generic_motor_material"/>
+                <geom type="mesh" class="collision" pos="0.0373317 -0.0344526 -0.08053" quat="0.401122 0 -0 -0.916024" mesh="generic_motor" material="generic_motor_material"/>
+                <!-- Part 6inch_shorter_arm_body_special -->
+                <geom type="mesh" class="visual" pos="-0.0247658 0.00125358 -0.03275" quat="0.647727 0.647727 0.283636 0.283636" mesh="6inch_shorter_arm_body_special" material="6inch_shorter_arm_body_special_material"/>
+                <geom type="mesh" class="collision" pos="-0.0247658 0.00125358 -0.03275" quat="0.647727 0.647727 0.283636 0.283636" mesh="6inch_shorter_arm_body_special" material="6inch_shorter_arm_body_special_material"/>
+                <!-- Part shaft__a8dbc260d20f92cbbb229ff00947eab8 -->
+                <geom type="mesh" class="visual" pos="0.0839963 -0.0775184 0.0333375" quat="0.647727 0.647727 0.283636 0.283636" mesh="shaft__a8dbc260d20f92cbbb229ff00947eab8" material="shaft__a8dbc260d20f92cbbb229ff00947eab8_material"/>
+                <geom type="mesh" class="collision" pos="0.0839963 -0.0775184 0.0333375" quat="0.647727 0.647727 0.283636 0.283636" mesh="shaft__a8dbc260d20f92cbbb229ff00947eab8" material="shaft__a8dbc260d20f92cbbb229ff00947eab8_material"/>
+                <!-- Part ros2_mounting_plate -->
+                <geom type="mesh" class="visual" pos="0.0326652 -0.0301461 0.0614125" quat="0.283636 0.283636 -0.647727 -0.647727" mesh="ros2_mounting_plate" material="ros2_mounting_plate_material"/>
+                <geom type="mesh" class="collision" pos="0.0326652 -0.0301461 0.0614125" quat="0.283636 0.283636 -0.647727 -0.647727" mesh="ros2_mounting_plate" material="ros2_mounting_plate_material"/>
+                <!-- Part 25t_htd_pulley_to_ros2 -->
+                <geom type="mesh" class="visual" pos="0.0373317 -0.0344526 -0.0438625" quat="0.647727 -0.647727 -0.283636 0.283636" mesh="25t_htd_pulley_to_ros2" material="25t_htd_pulley_to_ros2_material"/>
+                <geom type="mesh" class="collision" pos="0.0373317 -0.0344526 -0.0438625" quat="0.647727 -0.647727 -0.283636 0.283636" mesh="25t_htd_pulley_to_ros2" material="25t_htd_pulley_to_ros2_material"/>
+                <!-- Part 45t_htd_pulley_9_53mm_wide__33b796cf21c40184b65e8a9dd45179d8 -->
+                <geom type="mesh" class="visual" pos="0.0839963 -0.0775184 -0.0343375" quat="0.647727 0.647727 0.283636 0.283636" mesh="45t_htd_pulley_9_53mm_wide__33b796cf21c40184b65e8a9dd45179d8" material="45t_htd_pulley_9_53mm_wide__33b796cf21c40184b65e8a9dd45179d8_material"/>
+                <geom type="mesh" class="collision" pos="0.0839963 -0.0775184 -0.0343375" quat="0.647727 0.647727 0.283636 0.283636" mesh="45t_htd_pulley_9_53mm_wide__33b796cf21c40184b65e8a9dd45179d8" material="45t_htd_pulley_9_53mm_wide__33b796cf21c40184b65e8a9dd45179d8_material"/>
+                <!-- Link 20inch_longer_arm_body_3 -->
+                <body name="20inch_longer_arm_body_3" pos="0.0839963 -0.0775184 -0.001" quat="0 0.916024 0.401122 0">
+                  <!-- Joint from shaft__a8dbc260d20f92cbbb229ff00947eab8 to 20inch_longer_arm_body_3 -->
+                  <joint axis="0 0 1" name="l0" type="hinge"/>
+                  <inertial pos="-0.172659 0.159343 -0.016875" mass="0.490242" fullinertia="0.00478941 0.0055997 0.0102555 0.00504266 0 0"/>
+                  <!-- Part 20inch_longer_arm_body_3 -->
+                  <!-- <geom type="mesh" class="visual" pos="0.0419922 0.0174123 -0.001" quat="0.647727 -0.647727 -0.283636 0.283636" mesh="20inch_longer_arm_body" material="20inch_longer_arm_body_material"/> -->
+                  <!-- <geom type="mesh" class="collision" pos="0.0419922 0.0174123 -0.001" quat="0.647727 -0.647727 -0.283636 0.283636" mesh="20inch_longer_arm_body" material="20inch_longer_arm_body_material"/> -->
+                  <!-- Frame closing_for_l0_1 -->
+                  <!-- <site group="3" name="closing_for_l0_1" pos="-0.345318 0.318687 -0.03275" quat="0 0.916024 0.401122 -0"/> -->
+                  <!-- Frame closing_for_l0_1_z -->
+                  <!-- <site group="3" name="closing_for_l0_1_z" pos="-0.345318 0.318687 -0.13275" quat="0 0.916024 0.401122 -0"/> -->
+                </body>
+              </body>
+              <!-- Link 6inch_shorter_arm_body -->
+              <body name="6inch_shorter_arm_body" pos="0 -0.4699 -0" quat="0 1 0 0">
+                <!-- Joint from 20inch_longer_arm_body_2 to 6inch_shorter_arm_body -->
+                <joint axis="0 0 1" name="arm_6" type="hinge"/>
+                <inertial pos="0.0419982 0.0387592 -0.016875" mass="0.139231" fullinertia="0.000148251 0.000167285 0.000278678 -0.000118458 -0 0"/>
+                <!-- Part 6inch_shorter_arm_body_2 -->
+                <geom type="mesh" class="visual" pos="-0.0247658 -0.00125358 -0.001" quat="0.647727 -0.647727 0.283636 -0.283636" mesh="6inch_shorter_arm_body" material="6inch_shorter_arm_body_material"/>
+                <geom type="mesh" class="collision" pos="-0.0247658 -0.00125358 -0.001" quat="0.647727 -0.647727 0.283636 -0.283636" mesh="6inch_shorter_arm_body" material="6inch_shorter_arm_body_material"/>
+                <!-- Frame closing_for_l0_2 -->
+                <site group="3" name="closing_for_l0_2" pos="0.0839963 0.0775184 0" quat="0 -0.931363 -0.364091 0"/>
+                <!-- Frame closing_for_l0_2_z -->
+                <site group="3" name="closing_for_l0_2_z" pos="0.0839963 0.0775184 -0.1" quat="0 -0.931363 -0.364091 0"/>
+                <!-- Link 20inch_longer_arm_body_4 -->
+                <body name="20inch_longer_arm_body_4" pos="-0 0 -0.03275" quat="0.916024 0 0 -0.401122">
+                  <!-- Joint from 6inch_shorter_arm_body to 20inch_longer_arm_body_4 -->
+                  <joint axis="0 0 1" name="arm_1" type="hinge"/>
+                  <inertial pos="0.181506 0.141997 -0.0141937" mass="0.544458" fullinertia="0.00518273 0.00833533 0.0132387 -0.00635731 0.000123468 9.65926e-05"/>
+                  <!-- Part 20inch_longer_arm_body_4 -->
+                  <geom type="mesh" class="visual" pos="0.35967 0.333786 -0.001" quat="0.309769 -0.309769 -0.635644 0.635644" mesh="20inch_longer_arm_body" material="20inch_longer_arm_body_material"/>
+                  <geom type="mesh" class="collision" pos="0.35967 0.333786 -0.001" quat="0.309769 -0.309769 -0.635644 0.635644" mesh="20inch_longer_arm_body" material="20inch_longer_arm_body_material"/>
+                  <!-- Part shaft__5fbdf77fd4f620b8d463c146f0a0f438 -->
+                  <geom type="mesh" class="visual" pos="0 0 0.0164625" quat="0.309769 -0.309769 -0.635644 0.635644" mesh="shaft__5fbdf77fd4f620b8d463c146f0a0f438" material="shaft__5fbdf77fd4f620b8d463c146f0a0f438_material"/>
+                  <geom type="mesh" class="collision" pos="0 0 0.0164625" quat="0.309769 -0.309769 -0.635644 0.635644" mesh="shaft__5fbdf77fd4f620b8d463c146f0a0f438" material="shaft__5fbdf77fd4f620b8d463c146f0a0f438_material"/>
+                  <!-- Part shaft__0bd66336cfed5c80183e11c092564228 -->
+                  <geom type="mesh" class="visual" pos="0.370099 0.289539 0.0005875" quat="0.668508 -0.668508 -0.230428 0.230428" mesh="shaft__0bd66336cfed5c80183e11c092564228" material="shaft__0bd66336cfed5c80183e11c092564228_material"/>
+                  <geom type="mesh" class="collision" pos="0.370099 0.289539 0.0005875" quat="0.668508 -0.668508 -0.230428 0.230428" mesh="shaft__0bd66336cfed5c80183e11c092564228" material="shaft__0bd66336cfed5c80183e11c092564228_material"/>
+                  <!-- Frame closing_dof_for_l1_1 -->
+                  <site group="3" name="closing_dof_for_l1_1" pos="0.370099 0.289539 -0.001" quat="0.43808 -0 0 0.898936"/>
+                  <!-- Frame closing_dof_for_l1_1_z -->
+                  <site group="3" name="closing_dof_for_l1_1_z" pos="0.370099 0.289539 0.099" quat="0.43808 -0 0 0.898936"/>
+                </body>
+                <!-- Link 20inch_longer_arm_body_5 -->
+                <body name="20inch_longer_arm_body_5" pos="0.0839963 0.0775184 -0.03275" quat="0.916024 0 0 -0.401122">
+                  <!-- Joint from 6inch_shorter_arm_body to 20inch_longer_arm_body_5 -->
+                  <joint axis="0 0 1" name="l1" type="hinge"/>
+                  <inertial pos="0.148873 0.116468 -0.0178436" mass="0.663802" fullinertia="0.00727711 0.0116808 0.0185534 -0.00888013 -0.00033605 -0.000262902"/>
+                  <!-- Part 1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348_3 -->
+                  <geom type="mesh" class="visual" pos="0 0 -0.03175" quat="0.309769 -0.309769 -0.635644 0.635644" mesh="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348" material="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348_material"/>
+                  <geom type="mesh" class="collision" pos="0 0 -0.03175" quat="0.309769 -0.309769 -0.635644 0.635644" mesh="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348" material="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348_material"/>
+                  <!-- Part 20inch_longer_arm_body_5 -->
+                  <geom type="mesh" class="visual" pos="0.35967 0.333786 -0" quat="0.309769 -0.309769 -0.635644 0.635644" mesh="20inch_longer_arm_body" material="20inch_longer_arm_body_material"/>
+                  <geom type="mesh" class="collision" pos="0.35967 0.333786 -0" quat="0.309769 -0.309769 -0.635644 0.635644" mesh="20inch_longer_arm_body" material="20inch_longer_arm_body_material"/>
+                  <!-- Part 60t_htd_pulley_5mm_pitch -->
+                  <geom type="mesh" class="visual" pos="0 0 -0.04445" quat="0.230428 -0.230428 0.668508 -0.668508" mesh="60t_htd_pulley_5mm_pitch" material="60t_htd_pulley_5mm_pitch_material"/>
+                  <geom type="mesh" class="collision" pos="0 0 -0.04445" quat="0.230428 -0.230428 0.668508 -0.668508" mesh="60t_htd_pulley_5mm_pitch" material="60t_htd_pulley_5mm_pitch_material"/>
+                  <!-- Part shaft__f5ea2610110e5a724bd2ac1f6fb473a2 -->
+                  <geom type="mesh" class="visual" pos="0 0 0.009525" quat="0.668508 -0.668508 -0.230428 0.230428" mesh="shaft__f5ea2610110e5a724bd2ac1f6fb473a2" material="shaft__f5ea2610110e5a724bd2ac1f6fb473a2_material"/>
+                  <geom type="mesh" class="collision" pos="0 0 0.009525" quat="0.668508 -0.668508 -0.230428 0.230428" mesh="shaft__f5ea2610110e5a724bd2ac1f6fb473a2" material="shaft__f5ea2610110e5a724bd2ac1f6fb473a2_material"/>
+                  <!-- Part shaft__0bd66336cfed5c80183e11c092564228_2 -->
+                  <geom type="mesh" class="visual" pos="0.370099 0.289539 0.0015875" quat="0.668508 -0.668508 -0.230428 0.230428" mesh="shaft__0bd66336cfed5c80183e11c092564228" material="shaft__0bd66336cfed5c80183e11c092564228_material"/>
+                  <geom type="mesh" class="collision" pos="0.370099 0.289539 0.0015875" quat="0.668508 -0.668508 -0.230428 0.230428" mesh="shaft__0bd66336cfed5c80183e11c092564228" material="shaft__0bd66336cfed5c80183e11c092564228_material"/>
+                  <!-- Link 6inch_shorter_arm_body_2 -->
+                  <body name="6inch_shorter_arm_body_2" pos="0.370099 0.289539 -0" quat="0 0.43808 0.898936 -0">
+                    <!-- Joint from 20inch_longer_arm_body_5 to 6inch_shorter_arm_body_2 -->
+                    <joint axis="0 0 1" name="arm_2" type="hinge"/>
+                    <inertial pos="-0.045012 -0.0352143 -0.015875" mass="0.139231" fullinertia="0.000129168 0.000186368 0.000278678 -0.000115347 -0 -0"/>
+                    <!-- Part 6inch_shorter_arm_body_3 -->
+                    <geom type="mesh" class="visual" pos="-0.0952462 -0.0946699 -0.03175" quat="0.309769 0.309769 0.635644 0.635644" mesh="6inch_shorter_arm_body" material="6inch_shorter_arm_body_material"/>
+                    <geom type="mesh" class="collision" pos="-0.0952462 -0.0946699 -0.03175" quat="0.309769 0.309769 0.635644 0.635644" mesh="6inch_shorter_arm_body" material="6inch_shorter_arm_body_material"/>
+                    <!-- Frame closing_dof_for_l1_2 -->
+                    <site group="3" name="closing_dof_for_l1_2" pos="-0.090024 -0.0704285 0.001" quat="0 0.325875 -0.945413 0"/>
+                    <!-- Frame closing_dof_for_l1_2_z -->
+                    <site group="3" name="closing_dof_for_l1_2_z" pos="-0.090024 -0.0704285 -0.099" quat="0 0.325875 -0.945413 0"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+        <!-- Link tire_4 -->
+        <body name="tire_4" pos="-0.548757 -0.145757 0" quat="0 0.377005 -0.926211 -0">
+          <!-- Joint from part_9 to tire_4 -->
+          <joint axis="0 0 1" name="R_wheel_rocker"/>
+          <inertial pos="0 0 -0.0349958" mass="0.9189" fullinertia="0.00387282 0.00387282 0.00641687 0 0 0"/>
+          <!-- Part tire_4 -->
+          <geom type="mesh" class="visual" pos="0 0 0" quat="0 -1 0 -0" mesh="tire" material="tire_material"/>
+          <geom type="mesh" class="collision" pos="0 0 0" quat="0 -1 0 -0" mesh="tire" material="tire_material"/>
+          <!-- Part wheel_4 -->
+          <geom type="mesh" class="visual" pos="-0 0 0" quat="0 1 0 0" mesh="wheel" material="wheel_material"/>
+          <geom type="mesh" class="collision" pos="-0 0 0" quat="0 1 0 0" mesh="wheel" material="wheel_material"/>
+        </body>
+      </body>
+      <!-- Link part_10 -->
+      <body name="part_10" pos="0.262069 0.359001 -0.101482" quat="0.500592 0.500355 0.499313 0.499739">
+        <!-- Joint from part_5 to part_10 -->
+        <joint axis="0 0 1" name="R_diff" type="ball"/>
+        <inertial pos="0.0173189 0.0336857 -0.01" mass="0.101041" fullinertia="0.000178842 2.16284e-05 0.000193628 -2.6096e-05 -0 0"/>
+        <!-- Part part_4_2 -->
+        <geom type="mesh" class="visual" pos="-0.365014 0.1 -0.02" quat="0.707107 -0.707107 -0 -0" mesh="part_4" material="part_4_material"/>
+        <geom type="mesh" class="collision" pos="-0.365014 0.1 -0.02" quat="0.707107 -0.707107 -0 -0" mesh="part_4" material="part_4_material"/>
+        <!-- Part part_10_2 -->
+        <geom type="mesh" class="visual" pos="-0.365014 0.1 -0.02" quat="0.707107 -0.707107 0 -0" mesh="part_10" material="part_10_material"/>
+        <geom type="mesh" class="collision" pos="-0.365014 0.1 -0.02" quat="0.707107 -0.707107 0 -0" mesh="part_10" material="part_10_material"/>
+        <!-- Frame closing_dof_R_ball2diff_1 -->
+        <site group="3" name="closing_dof_R_ball2diff_1" pos="0.034986 0.1 -0.01" quat="0.707107 0 0.707107 -0"/>
+      </body>
+      <!-- Link tire_5 -->
+      <body name="tire_5" pos="0.282069 0.0496794 -0.24724" quat="0.270598 0.653281 -0.270598 -0.653281">
+        <!-- Joint from part_5 to tire_5 -->
+        <joint axis="0 0 1" name="R_wheel_bogie"/>
+        <inertial pos="0 -0 -0.0349958" mass="0.9189" fullinertia="0.00387282 0.00387282 0.00641687 0 0 0"/>
+        <!-- Part wheel_5 -->
+        <geom type="mesh" class="visual" pos="0 0 0" quat="0 1 0 0" mesh="wheel" material="wheel_material"/>
+        <geom type="mesh" class="collision" pos="0 0 0" quat="0 1 0 0" mesh="wheel" material="wheel_material"/>
+        <!-- Part tire_5 -->
+        <geom type="mesh" class="visual" pos="0 0 0" quat="0 -1 0 -0" mesh="tire" material="tire_material"/>
+        <geom type="mesh" class="collision" pos="0 0 0" quat="0 -1 0 -0" mesh="tire" material="tire_material"/>
+      </body>
+      <!-- Link wheel -->
+      <body name="wheel" pos="0.282069 0.441194 -0.24724" quat="0.642532 0.295217 -0.642532 -0.295217">
+        <!-- Joint from part_5 to wheel -->
+        <joint axis="0 0 1" name="R_wheel_diff"/>
+        <inertial pos="0 0 -0.0349958" mass="0.9189" fullinertia="0.00387282 0.00387282 0.00641687 -0 0 0"/>
+        <!-- Part tire_6 -->
+        <geom type="mesh" class="visual" pos="0 0 -0" quat="0 -1 -0 -0" mesh="tire" material="tire_material"/>
+        <geom type="mesh" class="collision" pos="0 0 -0" quat="0 -1 -0 -0" mesh="tire" material="tire_material"/>
+        <!-- Part wheel_6 -->
+        <geom type="mesh" class="visual" pos="0 0 0" quat="0 1 0 0" mesh="wheel" material="wheel_material"/>
+        <geom type="mesh" class="collision" pos="0 0 0" quat="0 1 0 0" mesh="wheel" material="wheel_material"/>
+      </body>
+    </body>
+  </worldbody>
+  <asset>
+    <mesh file="part_7__2.stl"/>
+    <mesh file="mpn23_12___motor_de_passo_nema_23_v3__2.stl"/>
+    <mesh file="part_6__2.stl"/>
+    <mesh file="mpn23_12___motor_de_passo_nema_23_v3.stl"/>
+    <mesh file="shaft__5fbdf77fd4f620b8d463c146f0a0f438.stl"/>
+    <mesh file="part_5.stl"/>
+    <mesh file="v_slot_gantry_plate_20_80mm.stl"/>
+    <mesh file="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348.stl"/>
+    <mesh file="part_6.stl"/>
+    <mesh file="mpn23_12___motor_de_passo_nema_23_v3__4.stl"/>
+    <mesh file="diff_bar.stl"/>
+    <mesh file="mounting_to_gantry.stl"/>
+    <mesh file="chassis_body.stl"/>
+    <mesh file="shaft__f5ea2610110e5a724bd2ac1f6fb473a2.stl"/>
+    <mesh file="bracket.stl"/>
+    <mesh file="6inch_shorter_arm_body_special.stl"/>
+    <mesh file="part_4.stl"/>
+    <mesh file="ros2_mounting_plate.stl"/>
+    <mesh file="part_2.stl"/>
+    <mesh file="arm_bar.stl"/>
+    <mesh file="part_7.stl"/>
+    <mesh file="wheel.stl"/>
+    <mesh file="60t_htd_pulley_5mm_pitch.stl"/>
+    <mesh file="mounting_to_gantry_mirrored.stl"/>
+    <mesh file="45t_htd_pulley_9_53mm_wide__33b796cf21c40184b65e8a9dd45179d8.stl"/>
+    <mesh file="5mm_to_8mm_flexible_shaft_coupler.stl"/>
+    <mesh file="part_12.stl"/>
+    <mesh file="part_10.stl"/>
+    <mesh file="tire.stl"/>
+    <mesh file="shaft__0bd66336cfed5c80183e11c092564228.stl"/>
+    <mesh file="part_9.stl"/>
+    <mesh file="diff_coupler.stl"/>
+    <mesh file="generic_motor.stl"/>
+    <mesh file="20inch_longer_arm_body.stl"/>
+    <mesh file="gobilda_motor_adaptor.stl"/>
+    <mesh file="25t_htd_pulley_to_ros2.stl"/>
+    <mesh file="mpn23_12___motor_de_passo_nema_23_v3__3.stl"/>
+    <mesh file="lead_screw.stl"/>
+    <mesh file="bearing_block.stl"/>
+    <mesh file="part_3.stl"/>
+    <mesh file="part_11.stl"/>
+    <mesh file="part_1.stl"/>
+    <mesh file="ros4_mounting_plate.stl"/>
+    <mesh file="ros4_to_hex_adapter.stl"/>
+    <mesh file="anycubic_lead_nut_8mm_4_start.stl"/>
+    <mesh file="shaft__a8dbc260d20f92cbbb229ff00947eab8.stl"/>
+    <mesh file="6inch_shorter_arm_body.stl"/>
+    <material name="bracket_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="part_6_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="part_7_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="part_5_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="part_12_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="part_11_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="gobilda_motor_adaptor_material" rgba="0.901961 0.878431 0.811765 1"/>
+    <material name="part_3_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="part_9_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="part_1_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="bearing_block_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="part_2_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="part_7__2_material" rgba="0.972549 0.529412 0.00392157 1"/>
+    <material name="mpn23_12___motor_de_passo_nema_23_v3_material" rgba="0.25098 0.25098 0.25098 1"/>
+    <material name="chassis_body_material" rgba="0.901961 0.878431 0.811765 1"/>
+    <material name="mpn23_12___motor_de_passo_nema_23_v3__2_material" rgba="0.25098 0.25098 0.25098 1"/>
+    <material name="lead_screw_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="arm_bar_material" rgba="0.901961 0.878431 0.811765 1"/>
+    <material name="diff_coupler_material" rgba="0.917647 0.917647 0.917647 1"/>
+    <material name="mpn23_12___motor_de_passo_nema_23_v3__3_material" rgba="1 1 1 1"/>
+    <material name="mpn23_12___motor_de_passo_nema_23_v3__4_material" rgba="1 1 1 1"/>
+    <material name="5mm_to_8mm_flexible_shaft_coupler_material" rgba="0.996078 0.996078 1 1"/>
+    <material name="part_6__2_material" rgba="0.768627 0.886275 0.952941 1"/>
+    <material name="part_4_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="part_10_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="tire_material" rgba="0.654902 0.823529 0.576471 1"/>
+    <material name="wheel_material" rgba="0.901961 0.878431 0.811765 1"/>
+    <material name="diff_bar_material" rgba="0.882353 0.572549 0.478431 1"/>
+    <material name="generic_motor_material" rgba="0.0627451 0.266667 0.490196 1"/>
+    <material name="1_2__thunderhex_id_x_0_750__od_bushing__bronze__217_7348_material" rgba="0.898039 0.764706 0.4 1"/>
+    <material name="6inch_shorter_arm_body_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="ros4_mounting_plate_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="ros4_to_hex_adapter_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="mounting_to_gantry_material" rgba="0.768627 0.886275 0.952941 1"/>
+    <material name="v_slot_gantry_plate_20_80mm_material" rgba="0.301961 0.301961 0.301961 1"/>
+    <material name="anycubic_lead_nut_8mm_4_start_material" rgba="0.823529 0.623529 0.0352941 1"/>
+    <material name="20inch_longer_arm_body_material" rgba="0.647059 0.647059 0.647059 1"/>
+    <material name="mounting_to_gantry_mirrored_material" rgba="0.768627 0.886275 0.952941 1"/>
+    <material name="6inch_shorter_arm_body_special_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="shaft__a8dbc260d20f92cbbb229ff00947eab8_material" rgba="0.219608 0.219608 0.219608 1"/>
+    <material name="ros2_mounting_plate_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="25t_htd_pulley_to_ros2_material" rgba="0.294118 0.294118 0.294118 1"/>
+    <material name="45t_htd_pulley_9_53mm_wide__33b796cf21c40184b65e8a9dd45179d8_material" rgba="0.294118 0.294118 0.294118 1"/>
+    <material name="shaft__5fbdf77fd4f620b8d463c146f0a0f438_material" rgba="0.219608 0.219608 0.219608 1"/>
+    <material name="shaft__0bd66336cfed5c80183e11c092564228_material" rgba="0.219608 0.219608 0.219608 1"/>
+    <material name="60t_htd_pulley_5mm_pitch_material" rgba="0.294118 0.294118 0.294118 1"/>
+    <material name="shaft__f5ea2610110e5a724bd2ac1f6fb473a2_material" rgba="0.219608 0.219608 0.219608 1"/>
+  </asset>
+  <actuator>
+    <position class="rover" name="R_bogie" joint="R_bogie"/>
+    <position class="rover" name="R_to_chassis" joint="R_to_chassis"/>
+    <position class="rover" name="L_to_chassis" joint="L_to_chassis"/>
+    <position class="rover" name="L_bogie" joint="L_bogie"/>
+    <position class="rover" name="L_wheel_bogie" joint="L_wheel_bogie"/>
+    <position class="rover" name="L_wheel_diff" joint="L_wheel_diff"/>
+    <position class="rover" name="L_wheel_rocker" joint="L_wheel_rocker"/>
+    <position class="rover" name="diff_bar" joint="diff_bar" inheritrange="1"/>
+    <position class="rover" name="arm_gantry" joint="arm_gantry" inheritrange="1"/>
+    <position class="rover" name="arm_4" joint="arm_4"/>
+    <position class="rover" name="arm_5" joint="arm_5"/>
+    <position class="rover" name="arm_0" joint="arm_0"/>
+    <position class="rover" name="l0" joint="l0"/>
+    <position class="rover" name="arm_6" joint="arm_6"/>
+    <position class="rover" name="arm_1" joint="arm_1"/>
+    <position class="rover" name="l1" joint="l1"/>
+    <position class="rover" name="arm_2" joint="arm_2"/>
+    <position class="rover" name="R_wheel_rocker" joint="R_wheel_rocker"/>
+    <position class="rover" name="R_wheel_bogie" joint="R_wheel_bogie"/>
+    <position class="rover" name="R_wheel_diff" joint="R_wheel_diff"/>
+  </actuator>
+  <equality>
+    <connect site1="closing_dof_L_ball2diff_1" site2="closing_dof_L_ball2diff_2"/>
+    <connect site1="closing_dof_R_ball2diff_1" site2="closing_dof_R_ball2diff_2"/>
+    <connect site1="closing_dof_for_l1_1" site2="closing_dof_for_l1_2"/>
+    <connect site1="closing_dof_for_l1_1_z" site2="closing_dof_for_l1_2_z"/>
+    <connect site1="closing_for_l0_1" site2="closing_for_l0_2"/>
+    <connect site1="closing_for_l0_1_z" site2="closing_for_l0_2_z"/>
+  </equality>
+</mujoco>

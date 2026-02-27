@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "5d083538c77f86c43f4af244",
+    "documentMicroversion": "be466f41a91c3c9b3396764a",
+    "elementId": "ff5c6be7d7315da001d49bad",
+    "fullConfiguration": "default",
+    "id": "M2NowOqK219DEFKjb",
+    "isStandardContent": false,
+    "name": "Generic Motor <2>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}
