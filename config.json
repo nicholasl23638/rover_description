@@ -1,11 +1,11 @@
 {
-  "robot_name": "rover",
+  "robot_name": "rescue_rangers_arm",
   "package_name": "rover_description",
-  "assets_directory": "RescueRangersMeshes",
-  "output_filename": "RescueRangers",
-  "output_format": "mujoco",
+  "assets_directory": "RescueRangersArmMeshes",
+  "output_filename": "RescueRangersArm",
+  "output_format": "urdf",
   "document_id": "dccc9867c88f4c00ebd285c5", 
   "workspace_id": "4d6b4b67b32ea734f124cf6d",
-  "element_id": "c1a3153928fcea96cc8c79e9",
-  "assembly_name": "SimAsm"
+  "element_id": "178591b0243eb7b7e9e5b013",
+  "assembly_name": "SimArm"
 }
