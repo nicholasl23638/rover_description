@@ -13,7 +13,7 @@
     <visual>
       <origin xyz="0.0659729 -0.0209888 0.97053" rpy="-1.5708 0 -0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2.stl"/>
       </geometry>
       <material name="h42p_020_s300_r_dummy2_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -22,14 +22,14 @@
     <collision>
       <origin xyz="0.0659729 -0.0209888 0.97053" rpy="-1.5708 0 -0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2.stl"/>
       </geometry>
     </collision>
     <!-- Part j5 -->
     <visual>
       <origin xyz="0.0779729 1.12e-05 0.94953" rpy="0 -0 3.14159"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/j5.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/j5.stl"/>
       </geometry>
       <material name="j5_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -38,7 +38,7 @@
     <collision>
       <origin xyz="0.0779729 1.12e-05 0.94953" rpy="0 -0 3.14159"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/j5.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/j5.stl"/>
       </geometry>
     </collision>
   </link>
@@ -53,7 +53,7 @@
     <visual>
       <origin xyz="0 -0.021 -0.057" rpy="-1.5708 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2.stl"/>
       </geometry>
       <material name="h42p_020_s300_r_dummy2_2_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -62,14 +62,14 @@
     <collision>
       <origin xyz="0 -0.021 -0.057" rpy="-1.5708 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2.stl"/>
       </geometry>
     </collision>
     <!-- Part j5_2 -->
     <visual>
       <origin xyz="-0.021 -0 -0.045" rpy="0 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/j5.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/j5.stl"/>
       </geometry>
       <material name="j5_2_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -78,7 +78,7 @@
     <collision>
       <origin xyz="-0.021 -0 -0.045" rpy="0 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/j5.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/j5.stl"/>
       </geometry>
     </collision>
   </link>
@@ -93,7 +93,7 @@
     <visual>
       <origin xyz="0.021 0 0.00556714" rpy="0 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/j3.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/j3.stl"/>
       </geometry>
       <material name="j3_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -102,14 +102,14 @@
     <collision>
       <origin xyz="0.021 0 0.00556714" rpy="0 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/j3.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/j3.stl"/>
       </geometry>
     </collision>
     <!-- Part h42p_020_s300_r_dummy2_3 -->
     <visual>
       <origin xyz="0 -0.021 -0.057" rpy="-1.5708 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2.stl"/>
       </geometry>
       <material name="h42p_020_s300_r_dummy2_3_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -118,14 +118,14 @@
     <collision>
       <origin xyz="0 -0.021 -0.057" rpy="-1.5708 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2.stl"/>
       </geometry>
     </collision>
     <!-- Part imported1 -->
     <visual>
       <origin xyz="0.047 0 -0.0796285" rpy="-1.5708 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/imported1.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/imported1.stl"/>
       </geometry>
       <material name="imported1_material">
         <color rgba="0.752941 0.752941 0.752941 1"/>
@@ -134,14 +134,14 @@
     <collision>
       <origin xyz="0.047 0 -0.0796285" rpy="-1.5708 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/imported1.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/imported1.stl"/>
       </geometry>
     </collision>
     <!-- Part imported1_2 -->
     <visual>
       <origin xyz="0.047 0 -0.0276285" rpy="1.5708 0 1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/imported1.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/imported1.stl"/>
       </geometry>
       <material name="imported1_2_material">
         <color rgba="0.752941 0.752941 0.752941 1"/>
@@ -150,14 +150,14 @@
     <collision>
       <origin xyz="0.047 0 -0.0276285" rpy="1.5708 0 1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/imported1.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/imported1.stl"/>
       </geometry>
     </collision>
     <!-- Part motoratt2 -->
     <visual>
       <origin xyz="0.31548 0 -0.0539785" rpy="-0 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/motoratt2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/motoratt2.stl"/>
       </geometry>
       <material name="motoratt2_material">
         <color rgba="0.498039 0.498039 0.498039 1"/>
@@ -166,14 +166,14 @@
     <collision>
       <origin xyz="0.31548 0 -0.0539785" rpy="-0 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/motoratt2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/motoratt2.stl"/>
       </geometry>
     </collision>
     <!-- Part armlink -->
     <visual>
       <origin xyz="0.377 0 -0.0536285" rpy="1.5708 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/armlink.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/armlink.stl"/>
       </geometry>
       <material name="armlink_material">
         <color rgba="0.498039 0.498039 0.498039 1"/>
@@ -182,7 +182,7 @@
     <collision>
       <origin xyz="0.377 0 -0.0536285" rpy="1.5708 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/armlink.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/armlink.stl"/>
       </geometry>
     </collision>
   </link>
@@ -197,7 +197,7 @@
     <visual>
       <origin xyz="0.0595 0 0.03605" rpy="0 0 -1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/imported1.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/imported1.stl"/>
       </geometry>
       <material name="imported1_3_material">
         <color rgba="0.752941 0.752941 0.752941 1"/>
@@ -206,14 +206,14 @@
     <collision>
       <origin xyz="0.0595 0 0.03605" rpy="0 0 -1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/imported1.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/imported1.stl"/>
       </geometry>
     </collision>
     <!-- Part motoratt2_2 -->
     <visual>
       <origin xyz="0.45102 -0 0.0097" rpy="-0 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/motoratt2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/motoratt2.stl"/>
       </geometry>
       <material name="motoratt2_2_material">
         <color rgba="0.498039 0.498039 0.498039 1"/>
@@ -222,14 +222,14 @@
     <collision>
       <origin xyz="0.45102 -0 0.0097" rpy="-0 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/motoratt2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/motoratt2.stl"/>
       </geometry>
     </collision>
     <!-- Part imported1_4 -->
     <visual>
       <origin xyz="0.0595 0 -0.01665" rpy="-1.5708 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/imported1.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/imported1.stl"/>
       </geometry>
       <material name="imported1_4_material">
         <color rgba="0.752941 0.752941 0.752941 1"/>
@@ -238,14 +238,14 @@
     <collision>
       <origin xyz="0.0595 0 -0.01665" rpy="-1.5708 -0 -1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/imported1.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/imported1.stl"/>
       </geometry>
     </collision>
     <!-- Part armlink_2 -->
     <visual>
       <origin xyz="0.3895 -0.06152 0.0097" rpy="-1.5708 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/armlink__2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/armlink__2.stl"/>
       </geometry>
       <material name="armlink_2_material">
         <color rgba="0.498039 0.498039 0.498039 1"/>
@@ -254,14 +254,14 @@
     <collision>
       <origin xyz="0.3895 -0.06152 0.0097" rpy="-1.5708 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/armlink__2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/armlink__2.stl"/>
       </geometry>
     </collision>
     <!-- Part h42p_020_s300_r_dummy2_4 -->
     <visual>
       <origin xyz="0 0.021 -0.057" rpy="1.5708 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__2.stl"/>
       </geometry>
       <material name="h42p_020_s300_r_dummy2_4_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -270,14 +270,14 @@
     <collision>
       <origin xyz="0 0.021 -0.057" rpy="1.5708 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__2.stl"/>
       </geometry>
     </collision>
     <!-- Part j3_2 -->
     <visual>
       <origin xyz="0.0335 0 0.0097" rpy="-3.14159 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/j3__2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/j3__2.stl"/>
       </geometry>
       <material name="j3_2_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -286,7 +286,7 @@
     <collision>
       <origin xyz="0.0335 0 0.0097" rpy="-3.14159 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/j3__2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/j3__2.stl"/>
       </geometry>
     </collision>
   </link>
@@ -301,7 +301,7 @@
     <visual>
       <origin xyz="0 0.021 -0.057" rpy="1.5708 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__2.stl"/>
       </geometry>
       <material name="h42p_020_s300_r_dummy2_5_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -310,14 +310,14 @@
     <collision>
       <origin xyz="0 0.021 -0.057" rpy="1.5708 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__2.stl"/>
       </geometry>
     </collision>
     <!-- Part j2 -->
     <visual>
       <origin xyz="-0.0337 -0 0.0127" rpy="0 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/j2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/j2.stl"/>
       </geometry>
       <material name="j2_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -326,14 +326,14 @@
     <collision>
       <origin xyz="-0.0337 -0 0.0127" rpy="0 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/j2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/j2.stl"/>
       </geometry>
     </collision>
     <!-- Part part_5 -->
     <visual>
       <origin xyz="-0.0337 -0 0.0127" rpy="0 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/part_5.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/part_5.stl"/>
       </geometry>
       <material name="part_5_material">
         <color rgba="0.231373 0.380392 0.705882 1"/>
@@ -342,14 +342,14 @@
     <collision>
       <origin xyz="-0.0337 -0 0.0127" rpy="0 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/part_5.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/part_5.stl"/>
       </geometry>
     </collision>
     <!-- Part part_3 -->
     <visual>
       <origin xyz="-0.05657 -1.12e-05 0.0126944" rpy="0 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/part_3.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/part_3.stl"/>
       </geometry>
       <material name="part_3_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -358,7 +358,7 @@
     <collision>
       <origin xyz="-0.05657 -1.12e-05 0.0126944" rpy="0 1.5708 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/part_3.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/part_3.stl"/>
       </geometry>
     </collision>
   </link>
@@ -373,7 +373,7 @@
     <visual>
       <origin xyz="-0 -0 -0.0095" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/part_2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/part_2.stl"/>
       </geometry>
       <material name="part_2_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -382,14 +382,14 @@
     <collision>
       <origin xyz="-0 -0 -0.0095" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/part_2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/part_2.stl"/>
       </geometry>
     </collision>
     <!-- Part part_5_2 -->
     <visual>
       <origin xyz="-0 -0 -0.0095" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/part_5__2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/part_5__2.stl"/>
       </geometry>
       <material name="part_5_2_material">
         <color rgba="0.917647 0.917647 0.917647 1"/>
@@ -398,14 +398,14 @@
     <collision>
       <origin xyz="-0 -0 -0.0095" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/part_5__2.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/part_5__2.stl"/>
       </geometry>
     </collision>
     <!-- Part part_4 -->
     <visual>
       <origin xyz="-0 -0 -0.0095" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/part_4.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/part_4.stl"/>
       </geometry>
       <material name="part_4_material">
         <color rgba="0.231373 0.380392 0.705882 1"/>
@@ -414,14 +414,14 @@
     <collision>
       <origin xyz="-0 -0 -0.0095" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/part_4.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/part_4.stl"/>
       </geometry>
     </collision>
     <!-- Part h42p_020_s300_r_dummy2_6 -->
     <visual>
       <origin xyz="-0 -0 -0.00802" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__3.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__3.stl"/>
       </geometry>
       <material name="h42p_020_s300_r_dummy2_6_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -430,7 +430,7 @@
     <collision>
       <origin xyz="-0 -0 -0.00802" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__3.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__3.stl"/>
       </geometry>
     </collision>
   </link>
@@ -485,7 +485,7 @@
     <visual>
       <origin xyz="-0 -0 -0.055" rpy="-1.5708 0 -1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/frame.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/frame.stl"/>
       </geometry>
       <material name="frame_material">
         <color rgba="0.698039 0 0 1"/>
@@ -494,14 +494,14 @@
     <collision>
       <origin xyz="-0 -0 -0.055" rpy="-1.5708 0 -1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/frame.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/frame.stl"/>
       </geometry>
     </collision>
     <!-- Part gripper_tpu -->
     <visual>
       <origin xyz="0.03915 0.0165996 -0.0547135" rpy="-1.5708 -0 1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/gripper_tpu.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/gripper_tpu.stl"/>
       </geometry>
       <material name="gripper_tpu_material">
         <color rgba="0.972549 0.529412 0.00392157 1"/>
@@ -510,14 +510,14 @@
     <collision>
       <origin xyz="0.03915 0.0165996 -0.0547135" rpy="-1.5708 -0 1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/gripper_tpu.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/gripper_tpu.stl"/>
       </geometry>
     </collision>
     <!-- Part gripper_tpu_2 -->
     <visual>
       <origin xyz="-0.04665 -0.0165996 -0.0547135" rpy="-1.5708 0 -1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/gripper_tpu.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/gripper_tpu.stl"/>
       </geometry>
       <material name="gripper_tpu_2_material">
         <color rgba="0.972549 0.529412 0.00392157 1"/>
@@ -526,14 +526,14 @@
     <collision>
       <origin xyz="-0.04665 -0.0165996 -0.0547135" rpy="-1.5708 0 -1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/gripper_tpu.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/gripper_tpu.stl"/>
       </geometry>
     </collision>
     <!-- Part blocco_dito -->
     <visual>
       <origin xyz="-0.00374999 -0.039 -0.0736" rpy="-1.5708 -0 1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/blocco_dito.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/blocco_dito.stl"/>
       </geometry>
       <material name="blocco_dito_material">
         <color rgba="0.698039 0.698039 0.698039 1"/>
@@ -542,14 +542,14 @@
     <collision>
       <origin xyz="-0.00374999 -0.039 -0.0736" rpy="-1.5708 -0 1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/blocco_dito.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/blocco_dito.stl"/>
       </geometry>
     </collision>
     <!-- Part blocco_dito_mirror -->
     <visual>
       <origin xyz="-0.00374999 -0.031 -0.0736" rpy="-1.5708 -0 1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/blocco_dito_mirror.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/blocco_dito_mirror.stl"/>
       </geometry>
       <material name="blocco_dito_mirror_material">
         <color rgba="0.698039 0.698039 0.698039 1"/>
@@ -558,7 +558,7 @@
     <collision>
       <origin xyz="-0.00374999 -0.031 -0.0736" rpy="-1.5708 -0 1.5708"/>
       <geometry>
-        <mesh filename="package://rover_description/RescueRangersArmMeshes/blocco_dito_mirror.stl"/>
+        <mesh filename="package://rover_description/share/rover_description/RescueRangersArmMeshes/blocco_dito_mirror.stl"/>
       </geometry>
     </collision>
   </link>
