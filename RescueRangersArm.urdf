@@ -363,7 +363,7 @@
     </inertial>
     <!-- Part h42p_020_s300_r_dummy2_5 -->
     <visual>
-      <origin xyz="0.012 0.021 -0.027" rpy="-1.5708 -0 -3.14159"/>
+      <origin xyz="0.012 0.021 -0.027" rpy="-1.5708 -0 3.14159"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__3.stl"/>
       </geometry>
@@ -372,14 +372,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0.012 0.021 -0.027" rpy="-1.5708 -0 -3.14159"/>
+      <origin xyz="0.012 0.021 -0.027" rpy="-1.5708 -0 3.14159"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__3.stl"/>
       </geometry>
     </collision>
     <!-- Part j5 -->
     <visual>
-      <origin xyz="0 0 -0.006" rpy="-3.14159 -0 0"/>
+      <origin xyz="-0 0 -0.006" rpy="-3.14159 -0 -0"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/j5.stl"/>
       </geometry>
@@ -388,7 +388,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.006" rpy="-3.14159 -0 0"/>
+      <origin xyz="-0 0 -0.006" rpy="-3.14159 -0 -0"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/j5.stl"/>
       </geometry>
@@ -403,7 +403,7 @@
     </inertial>
     <!-- Part h42p_020_s300_r_dummy2_6 -->
     <visual>
-      <origin xyz="-0.012 0.021 -0.027" rpy="1.5708 0 0"/>
+      <origin xyz="-0.012 0.021 -0.027" rpy="1.5708 0 -0"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__3.stl"/>
       </geometry>
@@ -412,14 +412,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.012 0.021 -0.027" rpy="1.5708 0 0"/>
+      <origin xyz="-0.012 0.021 -0.027" rpy="1.5708 0 -0"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/h42p_020_s300_r_dummy2__3.stl"/>
       </geometry>
     </collision>
     <!-- Part j5_2 -->
     <visual>
-      <origin xyz="0 -0 -0.006" rpy="3.14159 -0 -3.14159"/>
+      <origin xyz="-0 0 -0.006" rpy="3.14159 -0 -3.14159"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/j5.stl"/>
       </geometry>
@@ -428,7 +428,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 -0 -0.006" rpy="3.14159 -0 -3.14159"/>
+      <origin xyz="-0 0 -0.006" rpy="3.14159 -0 -3.14159"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/j5.stl"/>
       </geometry>
@@ -437,13 +437,13 @@
   <!-- Link frame -->
   <link name="frame">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="1e-09"/>
-      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+      <origin xyz="0.00354375 -0.00222972 -0.0410026" rpy="0 0 0"/>
+      <mass value="0.183726"/>
+      <inertia ixx="0.000316" ixy="1.71807e-06" ixz="-1.23452e-06" iyy="0.000102139" iyz="-1.55637e-06" izz="0.000246551"/>
     </inertial>
     <!-- Part frame -->
     <visual>
-      <origin xyz="-0 -0 -0.055" rpy="-1.5708 0 -1.5708"/>
+      <origin xyz="-0 0 -0.055" rpy="-1.5708 0 -1.5708"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/frame.stl"/>
       </geometry>
@@ -452,14 +452,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0 -0 -0.055" rpy="-1.5708 0 -1.5708"/>
+      <origin xyz="-0 0 -0.055" rpy="-1.5708 0 -1.5708"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/frame.stl"/>
       </geometry>
     </collision>
     <!-- Part gripper_tpu -->
     <visual>
-      <origin xyz="0.03915 0.0165996 -0.0547135" rpy="-1.5708 -0 1.5708"/>
+      <origin xyz="0.03915 0.0165996 -0.0547135" rpy="-1.5708 0 1.5708"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/gripper_tpu.stl"/>
       </geometry>
@@ -468,7 +468,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0.03915 0.0165996 -0.0547135" rpy="-1.5708 -0 1.5708"/>
+      <origin xyz="0.03915 0.0165996 -0.0547135" rpy="-1.5708 0 1.5708"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/gripper_tpu.stl"/>
       </geometry>
@@ -491,7 +491,7 @@
     </collision>
     <!-- Part blocco_dito -->
     <visual>
-      <origin xyz="-0.00374999 -0.039 -0.0736" rpy="-1.5708 -0 1.5708"/>
+      <origin xyz="-0.00374999 -0.039 -0.0736" rpy="-1.5708 0 1.5708"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/blocco_dito.stl"/>
       </geometry>
@@ -500,14 +500,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.00374999 -0.039 -0.0736" rpy="-1.5708 -0 1.5708"/>
+      <origin xyz="-0.00374999 -0.039 -0.0736" rpy="-1.5708 0 1.5708"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/blocco_dito.stl"/>
       </geometry>
     </collision>
     <!-- Part blocco_dito_mirror -->
     <visual>
-      <origin xyz="-0.00374999 -0.031 -0.0736" rpy="-1.5708 -0 1.5708"/>
+      <origin xyz="-0.00374999 -0.031 -0.0736" rpy="-1.5708 0 1.5708"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/blocco_dito_mirror.stl"/>
       </geometry>
@@ -516,7 +516,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.00374999 -0.031 -0.0736" rpy="-1.5708 -0 1.5708"/>
+      <origin xyz="-0.00374999 -0.031 -0.0736" rpy="-1.5708 0 1.5708"/>
       <geometry>
         <mesh filename="package://rover_description/RescueRangersArmMeshes/blocco_dito_mirror.stl"/>
       </geometry>
@@ -524,7 +524,7 @@
   </link>
   <!-- Joint from j5 to frame -->
   <joint name="j5" type="revolute">
-    <origin xyz="0.045 3.91302e-05 -0.027" rpy="0 -1.5708 0"/>
+    <origin xyz="0.045 3.91302e-05 -0.027" rpy="-0 -1.5708 0"/>
     <parent link="j5"/>
     <child link="frame"/>
     <axis xyz="0 0 1"/>
@@ -532,7 +532,7 @@
   </joint>
   <!-- Joint from h42p_020_s300_r_dummy2_2 to j5 -->
   <joint name="j4" type="revolute">
-    <origin xyz="-0.045 -0 -0.027" rpy="-0 1.5708 0"/>
+    <origin xyz="-0.045 -0 -0.027" rpy="0 1.5708 0"/>
     <parent link="h42p_020_s300_r_dummy2_2"/>
     <child link="j5"/>
     <axis xyz="0 0 1"/>
