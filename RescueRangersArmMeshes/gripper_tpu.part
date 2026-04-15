@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "dccc9867c88f4c00ebd285c5",
+    "documentMicroversion": "6a391b920b1945a26607d841",
+    "elementId": "c094c09b50292e2843ad1f8e",
+    "fullConfiguration": "default",
+    "id": "MNsdiZRKMKvvtZ2y7",
+    "isStandardContent": false,
+    "name": "Gripper TPU <2>",
+    "partId": "RQBD",
+    "suppressed": false,
+    "type": "Part"
+}
